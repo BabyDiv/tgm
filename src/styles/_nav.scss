@@ -1,0 +1,257 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+.nav {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $color-brand;
+  padding: 20px 0;
+	width: 100vw;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+	&.active {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		list-style-type: none;
+		padding: 0;
+		gap: 10px;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-text-secondary;
+		@include apply-font($font-nav-desktop);
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		@media(min-width: 768px) {
+			color: $color-text-primary;
+
+			&:hover {
+				color: $color-brand;
+			}
+		}
+	}
+
+	&__item {
+		align-self: center;
+		position: relative;
+
+		&--dropdown {
+			&:hover .nav__dropdown {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+		}
+	}
+
+	&__dropdown {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: white;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		padding: 10px 0;
+		min-width: 180px;
+		z-index: 1000;
+
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(10px);
+		transition: all 0.3s ease;
+
+		li {
+			list-style: none;
+		}
+	}
+
+	&__dropdown.show {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+		pointer-events: auto;
+	}
+
+	&__dropdown-link {
+		display: block;
+		padding: 10px 16px;
+		color: $color-text-primary;
+		@include apply-font($font-nav-tablet);
+		text-decoration: none;
+		white-space: nowrap;
+
+		&:hover {
+			background-color: #f0f0f0;
+			opacity: 0.7;
+		}
+		@media(min-width: 768px) {
+			&:hover {
+				color: $color-brand;
+			}
+		}
+	}
+
+	.language-switcher select {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background-color: $color-background-primary;
+		border: 1px solid #ccc;
+		padding: 8px 32px 8px 12px;
+		@include apply-font($font-nav-tablet);
+		color: $color-text-primary;
+		border-radius: 0;
+		background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+		background-size: 12px;
+		cursor: pointer;
+		outline: none;
+
+		&:focus {
+			box-shadow: 0 0 0 2px $color-brand;
+		}
+	}
+	
+	.language-switcher {
+		position: relative;
+		display: inline-block;
+	}
+}
+
+// .button {
+// 	padding: 10px 32px;
+// 	background-color: $color-brand;
+// 	color: $color-text-secondary;
+// 	@include apply-font($font-button-primary-desktop);
+// 	border-radius: 8px;
+// 	border: none;
+
+// 	&:hover {
+// 		color: $color-text-tertiary;
+// 		cursor: pointer;
+// 		transition: all 0.5s ease;
+// 	}
+// }
+
+@media (min-width: 768px) {
+	.nav {
+		display: flex;
+		align-items: center;
+    justify-content: center;
+		position: static;
+		width: auto;
+    margin: 0;
+		padding: 0;
+		box-shadow: none;
+		background: none;
+
+		&__list {
+			display: flex;
+			flex-direction: row;
+			font-size: 16px;
+			padding: 0;
+			gap: 20px;
+			list-style-type: none;
+		}
+
+		&__link {
+			@include apply-font($font-nav-tablet);
+
+			&.active {
+				color: $color-brand;
+			}
+		}
+
+		&__item {
+			position: relative;
+	
+			&--dropdown {
+				&:hover .nav__dropdown {
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+		}
+	
+		&__dropdown {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background: white;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			padding: 10px 0;
+			min-width: 180px;
+			z-index: 1000;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(10px);
+			transition: all 0.3s ease;
+	
+			li {
+				list-style: none;
+			}
+		}
+	
+		&__dropdown-link {
+			display: block;
+			padding: 10px 16px;
+			color: $color-text-primary;
+			@include apply-font($font-nav-tablet);
+			text-decoration: none;
+			white-space: nowrap;
+	
+			&:hover {
+				background-color: #f0f0f0;
+			}
+		}
+
+		&__button {
+			@include apply-font($font-nav-tablet);
+			border: 1px solid $color-brand;
+			
+			&:hover {
+				color: $color-brand;
+				background-color: $color-background-primary;
+				border: 1px solid $color-brand;
+				transition: color 0.4 ease;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media (min-width: 1068px) {
+	.nav {
+    justify-content: center;
+		&__list {
+			gap: 40px;
+		}
+
+		&__link {
+			@include apply-font($font-nav-desktop);
+		}
+
+		&__dropdown-link {
+			@include apply-font($font-nav-desktop);
+		}
+
+		&__button {
+			@include apply-font($font-nav-desktop);
+		}
+	}
+}

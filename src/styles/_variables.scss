@@ -1,0 +1,148 @@
+$color-background-primary: #FFFFFF;
+$color-background-secondary: #E8E6E6;
+$color-background-tertiary: #DBDBDB;
+$color-brand: #0074B5;
+$color-text-primary: #646464;
+$color-text-secondary: #FFFFFF;
+$color-text-tertiary: #D9D9D9;
+// $color-button-background: #20A69B;
+$color-button-background: #0074B5B8;
+
+$font-heading-1-desktop: (
+  family: 'Geometria Medium', 
+  size: 52px,
+  line-height: 1em
+);
+
+$font-heading-1-mobile: (
+  family: 'Geometria Medium', 
+  size: 28px,
+  line-height: 1em
+);
+
+$font-heading-2-desktop: (
+  family: 'Geometria Medium', 
+  size: 22px, 
+  line-height: 1.2em,
+	letter-spacing: 0em
+);
+
+$font-heading-2-mobile: (
+  family: 'Geometria Medium', 
+  size: 22px, 
+  weight: 400, 
+  line-height: 1.2em,
+	letter-spacing: 0em
+);
+
+$font-heading-3-desktop: (
+  family: 'Geometria Medium', 
+  size: 20px, 
+  weight: 400, 
+  line-height: 1.4em,
+	letter-spacing: 0em
+);
+
+$font-heading-3-mobile: (
+  family: 'Geometria Medium', 
+  size: 20px, 
+  weight: 400, 
+  line-height: 1.4em,
+	letter-spacing: 0em
+);
+
+$font-heading-4-desktop: (
+  family: 'Geometria Medium', 
+  size: 40px, 
+  weight: 400, 
+  line-height: 1.4em,
+	letter-spacing: 0em
+);
+
+$font-heading-4-mobile: (
+  family: 'Geometria Medium', 
+  size: 30px, 
+  weight: 400, 
+  line-height: 1.4em,
+	letter-spacing: 0em
+);
+
+$font-nav-tablet: (
+  family: 'Geometria Light', 
+  size: 16px, 
+  weight: 400, 
+  line-height: 1.4em
+);
+
+$font-nav-desktop: (
+  family: 'Geometria Light', 
+  size: 20px, 
+  weight: 400, 
+  line-height: 1.4em
+);
+
+$font-paragraph-1-desktop: (
+  family: 'Geometria Light', 
+  size: 18px, 
+  weight: 400, 
+  line-height: 1.4em
+);
+
+$font-paragraph-1-mobile: (
+  family: 'Geometria Light', 
+  size: 11px, 
+  weight: 400, 
+  line-height: 1.4em
+);
+
+$font-paragraph-2-desktop: (
+  family: 'Geometria Light', 
+  size: 16px, 
+  weight: 400, 
+  line-height: 1.6em
+);
+
+$font-paragraph-2-mobile: (
+  family: 'Geometria Light', 
+  size: 16px, 
+  weight: 400, 
+  line-height: 1.6em
+);
+
+$font-paragraph-3-desktop: (
+  family: 'Geometria Medium', 
+  size: 22px, 
+  line-height: 1.4em
+);
+
+$font-paragraph-3-mobile: (
+  family: 'Geometria Medium', 
+  size: 16px, 
+  line-height: 1.4em
+);
+
+$font-paragraph-4-desktop: (
+  family: 'Geometria Light', 
+  size: 20px, 
+  line-height: 1.4em
+);
+
+$font-paragraph-4-mobile: (
+  family: 'Geometria Light', 
+  size: 19px, 
+  line-height: 1.4em
+);
+
+$font-button-primary-desktop: (
+	family: 'Geometria Light', 
+  size: 16px, 
+  weight: 400, 
+  line-height: 1.4em
+);
+
+$font-button-secondary-desktop: (
+	family: 'Geometria Light', 
+  size: 14px, 
+  weight: 400, 
+  line-height: 1.4em
+)

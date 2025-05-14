@@ -1,0 +1,60 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+.expertise {
+	width: 100%;
+
+	&__title {
+		@include apply-font($font-heading-1-mobile);
+		color: $color-brand;
+		background-color: $color-background-primary;
+		padding: 20px 16%;
+
+		@media(min-width: 768px) {
+			@include apply-font($font-heading-1-desktop);
+      padding: 40px 16%;
+		}
+	}
+
+	&__item {
+		&-title {
+			@include apply-font($font-heading-2-mobile);
+			color: $color-brand;
+      margin-bottom: 10px;
+	
+			@media(min-width: 768px) {
+				@include apply-font($font-heading-2-desktop);
+        margin-bottom: 12px;
+			}		
+		}
+
+		&-text {
+			@include apply-font($font-paragraph-2-mobile);
+      color: #000000;
+	
+			@media(min-width: 768px) {
+				@include apply-font($font-paragraph-2-desktop);
+		  }
+	  } 
+	}
+
+	&__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+		padding: 30px 16%;
+		background-color: $color-background-secondary;
+		list-style-type: none;
+
+		@media(min-width: 768px) {
+      gap: 20px;
+			padding: 60px 16%;
+		}
+	}
+
+	p {
+		strong {
+			font-family: 'Geometria Medium',
+		}
+	}
+}

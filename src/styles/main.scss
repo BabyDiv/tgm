@@ -1,0 +1,37 @@
+@use './conclusion';
+@use './expertise';
+@use './footer';
+@use './header';
+@use './hero';
+@use './nav';
+@use './mission';
+@use './services';
+@use './mixins' as *;
+@use './variables' as *;
+
+@font-face {
+	font-family: 'Geometria Medium';
+	src: 
+	  url('../assets/fonts/geometria-medium.woff2') format('woff2'),
+		url('../assets/fonts/geometria-light.woff') format('woff'),
+		url('../assets/fonts/geometria-medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'Geometria Light';
+	src: 
+	  url('../assets/fonts/geometria-light.woff2') format('woff2'),
+		url('../assets/fonts/geometria-light.woff') format('woff'),
+		url('../assets/fonts/geometria-light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+body {
+	background-color: $color-background-primary;
+	margin: 0 auto;
+}

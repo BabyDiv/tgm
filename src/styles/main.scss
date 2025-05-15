@@ -1,11 +1,11 @@
 @use '../sections/Conclusion/Conclusion.module.scss';
-@use './expertise';
+@use '../sections/Expertise/Expertise.module.scss';
 @use '../sections/Footer/Footer.module.scss';
 @use '../sections/Header/Header.module.scss';
 @use '../sections/Hero/Hero.module.scss';
-@use './nav';
+@use '../sections/Nav/Nav.module.scss';
 @use '../sections/Mission/Mission.module.scss';
-@use './services';
+@use '../sections/Services/Services.module.scss';
 @use './mixins' as *;
 @use './variables' as *;
 

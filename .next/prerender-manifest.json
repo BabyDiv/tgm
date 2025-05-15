@@ -30,30 +30,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/about": {
       "experimentalBypassFor": [
         {
@@ -77,13 +53,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "9835eb2d2c40945d54017c1d3165371f",
-    "previewModeSigningKey": "792ebeeb239447afe88dcac2aba2b76656fc9b7ad63cf8e16cd7a4bb6de30980",
-    "previewModeEncryptionKey": "138ff795b4b91af317fdbfd9b8485bb56b7e562f394b04a8c85f2fa255c162d9"
+    "previewModeId": "2923b8cf73b5f8621dd4e287e73e1e95",
+    "previewModeSigningKey": "87049e9575d10f133c36ae13d93e0f15c9d57d8af39927ab505b27f99d01fd33",
+    "previewModeEncryptionKey": "2566e4a24349a1b0c6fdcc5d42c6d5b065c6a900999540dc1bc24468909602e2"
   }
 }

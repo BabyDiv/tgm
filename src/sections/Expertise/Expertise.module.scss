@@ -1,10 +1,10 @@
-@use './mixins' as *;
-@use './variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
 
 .expertise {
 	width: 100%;
 
-	&__title {
+	&__heading {
 		@include apply-font($font-heading-1-mobile);
 		color: $color-brand;
 		background-color: $color-background-primary;
@@ -16,27 +16,25 @@
 		}
 	}
 
-	&__item {
-		&-title {
-			@include apply-font($font-heading-2-mobile);
-			color: $color-brand;
-      margin-bottom: 10px;
-	
-			@media(min-width: 768px) {
-				@include apply-font($font-heading-2-desktop);
-        margin-bottom: 12px;
-			}		
-		}
+	&__title {
+		@include apply-font($font-heading-2-mobile);
+		color: $color-brand;
+		margin-bottom: 10px;
 
-		&-text {
-			@include apply-font($font-paragraph-2-mobile);
-      color: #000000;
-	
-			@media(min-width: 768px) {
-				@include apply-font($font-paragraph-2-desktop);
-		  }
-	  } 
+		@media(min-width: 768px) {
+			@include apply-font($font-heading-2-desktop);
+			margin-bottom: 12px;
+		}		
 	}
+
+	&__text {
+		@include apply-font($font-paragraph-2-mobile);
+		color: #000000;
+
+		@media(min-width: 768px) {
+			@include apply-font($font-paragraph-2-desktop);
+		}
+	} 
 
 	&__list {
     display: flex;

@@ -1,5 +1,5 @@
-@use './mixins' as *;
-@use './variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
 
 .services {
 	&__container {
@@ -28,9 +28,9 @@
 		padding: 34px;
 		box-sizing: border-box;
 
-		.card__img-1,
-		.card__img-2,
-		.card__img-3 {
+		.card__img1,
+		.card__img2,
+		.card__img3 {
 			position: absolute;
 			top: -25px;
 			left: 50%;

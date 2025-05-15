@@ -1,8 +1,8 @@
 @use './conclusion';
 @use './expertise';
-@use './footer';
-@use './header';
-@use './hero';
+@use '../sections/Footer/Footer.module.scss';
+@use '../sections/Header/Header.module.scss';
+@use '../sections/Hero/Hero.module.scss';
 @use './nav';
 @use './mission';
 @use './services';

@@ -4,8 +4,10 @@
 @use '../sections/Header/Header.module.scss';
 @use '../sections/Hero/Hero.module.scss';
 @use '../sections/Nav/Nav.module.scss';
+@use '../sections/Intro/Intro.module.scss';
 @use '../sections/Mission/Mission.module.scss';
 @use '../sections/Services/Services.module.scss';
+@use '../sections/OurServices/OurServices.module.scss';
 @use './mixins' as *;
 @use './variables' as *;
 

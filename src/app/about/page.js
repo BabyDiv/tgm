@@ -11,8 +11,6 @@ export default function AboutPage() {
     <>
       <Header />
       <main>
-        <h1>About Us</h1>
-        <p>Информация о компании KVINT.</p>
       </main>
       <Footer />
     </>

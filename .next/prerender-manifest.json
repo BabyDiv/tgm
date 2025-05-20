@@ -1,12 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/favicon.ico": {
-      "initialHeaders": {
-        "cache-control": "public, max-age=0, must-revalidate",
-        "content-type": "image/x-icon",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
-      },
+    "/design": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -19,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/favicon.ico",
-      "dataRoute": null,
+      "srcRoute": "/design",
+      "dataRoute": "/design.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -54,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/services": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -67,8 +62,37 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/services",
+      "dataRoute": "/services.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/favicon.ico": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/x-icon",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/favicon.ico",
+      "dataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -102,7 +126,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/services": {
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -115,8 +139,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/services",
-      "dataRoute": "/services.rsc",
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -130,8 +154,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "48c28e85c38ea68b6d2ffac718bdb4e2",
-    "previewModeSigningKey": "15c99f8ecfbbbd1b05369dcaad04fa6e71461a7295ccdb8f3cb6dd530027c565",
-    "previewModeEncryptionKey": "c9396ded357e812bfd859f0da663d74d4a2f6b0933c2a50be4b7db04b47830cb"
+    "previewModeId": "d1b578f55e9b30b0255bb4fe91736843",
+    "previewModeSigningKey": "2f25b619f47c7725438d7799efd5e3ae5ad8bc83189850de5103b9c777f8e16e",
+    "previewModeEncryptionKey": "f2eb5de914b91ae08b40f4c1af0862445600a9aa6573215c9c8fd3fd8755ae55"
   }
 }

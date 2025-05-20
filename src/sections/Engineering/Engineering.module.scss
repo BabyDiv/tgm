@@ -1,0 +1,66 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.engineering {
+	padding: 30px 16%;
+
+	@media(min-width: 768px) {
+		padding: 60px 16%;
+	}
+
+	&__heading {
+		@include apply-font($font-heading-1-mobile);
+		color: $color-brand;
+		margin-top: 0;
+    margin-bottom: 30px;
+
+		@media(min-width: 768px) {
+			@include apply-font($font-heading-1-desktop);
+      margin-bottom: 42px;
+		}
+	}
+
+	&__tasks {
+		@include apply-font($font-heading-2-mobile);
+		color: $color-brand;
+    margin: 24px 0;
+
+		@media(min-width: 768px) {
+			@include apply-font($font-heading-2-desktop);
+      margin: 32px 0;
+		}
+
+		&-list {
+			padding-left: 0;
+      color: #000000;
+
+			@media(min-width: 768px) {
+				padding-left: 40px;
+			}
+		}
+	}
+
+	&__summary {
+		margin-bottom: 0;
+    margin-top: 10px;
+
+    @media(min-width: 768px) {
+      margin-top: 32px;
+    }
+	}
+
+	&__desc,
+	&__summary,
+	&__tasks-item {
+		@include apply-font($font-paragraph-2-mobile);
+    color: #000000;
+
+		@media(min-width: 768px) {
+			@include apply-font($font-paragraph-2-desktop);
+		}
+	} 
+
+	strong {
+		font-family: "Geometria Medium";
+	}
+}

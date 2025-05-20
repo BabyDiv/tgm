@@ -56,7 +56,7 @@ export default function Nav() {
             <Link href="/services" className="nav__link">{t('our services')}</Link>
             <ul className={`nav__dropdown ${activeDropdown === 'services' ? 'show' : ''}`}>
               <li><Link href="/engineering" className="nav__dropdown-link">{t('application engineering')}</Link></li>
-              <li><Link href="/service2" className="nav__dropdown-link">{t('design and engineering')}</Link></li>
+              <li><Link href="/design" className="nav__dropdown-link">{t('design and engineering')}</Link></li>
               <li><Link href="/service3" className="nav__dropdown-link">{t('project management')}</Link></li>
             </ul>
           </li>

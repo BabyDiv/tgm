@@ -51,6 +51,7 @@
 	&__item,
 	&__conclusion {
 		@include apply-font($font-paragraph-2-mobile);
+		color: #000000;
 
 		@media(min-width: 768px) {
 			@include apply-font($font-paragraph-2-desktop);

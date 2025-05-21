@@ -1,12 +1,12 @@
 {
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/design/page": "/design",
   "/contact/page": "/contact",
-  "/management/page": "/management",
+  "/design/page": "/design",
   "/about/page": "/about",
-  "/engineering/page": "/engineering",
+  "/management/page": "/management",
   "/vision/page": "/vision",
-  "/page": "/",
-  "/services/page": "/services"
+  "/engineering/page": "/engineering",
+  "/services/page": "/services",
+  "/page": "/"
 }

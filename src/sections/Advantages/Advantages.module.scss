@@ -1,0 +1,44 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.advantages {
+	padding: 30px 16%;
+	background-color: $color-background-secondary;
+
+	@media(min-width: 768px) {
+		padding: 60px 16%;
+	}
+
+	&__title {
+		@include apply-font($font-heading-1-mobile);
+		margin-top: 0;
+    margin-bottom: 24px;
+    color: #000000;
+
+		@media(min-width: 768px) {
+      margin-bottom: 42px;
+			@include apply-font($font-heading-4-desktop);
+		}
+	}
+
+	strong {
+		font-family: "Geometria Medium";
+	}
+
+	&__list {
+		padding-left: 0;
+
+		@media(min-width: 768px) {
+			padding-left: 40px;
+		}	
+	}
+
+  &__item {
+    @include apply-font($font-paragraph-4-mobile);
+    color: #000000;
+
+    @media(min-width: 768px) {
+      @include apply-font($font-paragraph-4-desktop);
+    }
+  }
+}

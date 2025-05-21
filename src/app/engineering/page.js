@@ -8,7 +8,7 @@ import Footer from "../../sections/Footer/Footer";
 import Banner from "../../sections/Banner/Banner";
 import Engineering from "../../sections/Engineering/Engineering";
 
-export default function AboutPage() {
+export default function EngineeringPage() {
   return (
     <>
       <Header />

@@ -8,7 +8,7 @@ import Footer from "../../sections/Footer/Footer";
 import Design from "../../sections/Design/Design";
 import Top from "../../sections/Top/Top";
 
-export default function AboutPage() {
+export default function DesignPage() {
   return (
     <>
       <Header />

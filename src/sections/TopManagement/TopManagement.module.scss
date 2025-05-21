@@ -1,0 +1,102 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.top {
+  position: relative;
+  height: 40vh;
+  padding: 30px 0;
+  overflow: hidden;
+
+  &:hover .top__arrow {
+    opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    padding: 60px 0;
+    height: 35vh;
+  }
+
+  &__background {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-attachment: fixed;
+    transition: transform 1s ease;
+    filter: brightness(0.7);
+  }
+
+  &__slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 0;
+
+    &.active {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  .slide-1 { 
+    background-image: url('../../assets/design-2-mobile.avif');
+
+    @media(min-width: 768px) {
+      background-image: url('../../assets/design-2-desktop.avif');
+    }
+  }
+
+  .slide-2 {
+    background-image: url('../../assets/design-1-mobile.avif');
+
+    @media(min-width: 768px) {
+      background-image: url('../../assets/design-1-desktop.avif');
+    }			
+  }
+
+  .slide-11 { 
+    background-image: url('../../assets/about-mobile.avif');
+
+    @media(min-width: 768px) {
+      background-image: url('../../assets/about-desktop.avif');
+    }
+  }
+
+  &__arrow {
+    opacity: 0;
+    transition: opacity 0.3s, box-shadow 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 45px;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+    &:hover .arrow-icon {
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+    }
+
+    &.left { left: 20px; }
+    &.right { right: 20px; }
+  }
+  
+  .arrow-icon {
+    width: 62px;
+    height: 82px;
+    transition: filter 0.3s ease;
+    // stroke: $color-background-primary;
+    stroke-width: 3;
+  }
+}		

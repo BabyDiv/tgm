@@ -8,7 +8,7 @@ import Footer from "../../sections/Footer/Footer";
 import OurServices from "../../sections/OurServices/OurServices";
 import Intro from "../../sections/Intro/Intro";
 
-export default function AboutPage() {
+export default function ServicesPage() {
   return (
     <>
       <Header />

@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}";
+self.__REACT_LOADABLE_MANIFEST='{"sections/Contact/Contact.jsx -> intl-tel-input":{"id":5213,"files":["static/chunks/213.8d2322392801b418.js"]}}';

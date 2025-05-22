@@ -1,0 +1,137 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.contact {
+	padding: 30px 16%;
+	display: flex;
+	flex-direction: column;
+
+	@media(min-width: 768px) {
+		padding: 60px 12%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 48px;
+	}
+
+	&__title {
+    @include apply-font($font-heading-1-mobile);
+    color: $color-brand;
+    margin: 30px 0;
+
+		@media(min-width: 768px) {
+			margin-top: 0;
+    }
+
+    @media(min-width: 1064px) {
+      @include apply-font($font-heading-1-desktop);
+    }
+	}
+
+	&__text {
+		@include apply-font($font-paragraph-1-desktop);
+		margin-top: 0;
+		margin-bottom: 30px;
+    color: #000000;
+
+		@media(min-width: 768px) {
+			@include apply-font($font-paragraph-1-desktop);
+			margin-top: 18px;
+			margin-bottom: 50px;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+
+		@media(min-width: 768px) {
+			gap: 24px;
+		}
+
+		// .was-submitted input:invalid ~ .error-message,
+    // .was-submitted textarea:invalid ~ .error-message {
+    //   display: inline;
+    // }
+	}
+
+	label {
+		display: flex;
+		flex-direction: column;
+
+		span {
+			@include apply-font($font-button-secondary-desktop);
+      color: #000000;
+		}
+	}
+
+	input, textarea {
+		width: 100%;
+		padding: 8px 12px;
+		margin-top: 6px;
+		box-sizing: border-box;
+		color: #000000;
+    background-color: $color-background-primary;
+		border-radius: 0;
+		border: 1px solid $color-text-primary;
+		outline: none;
+		resize: none;
+		@include apply-font($font-paragraph-2-desktop);
+
+
+		&:active,
+		&:focus-visible {
+			color: $color-text-primary;
+			border-radius: 0;
+			outline: none;
+		}
+	}
+	
+	.error {
+		color: red;
+		font-size: 0.85em;
+		margin-top: 8px;
+	}
+
+	&__button {
+		display: inline-block;
+		padding: 11px 15px;
+		margin-top: 24px;
+		width: 100%;
+		text-align: center;
+		background-color: $color-button-background;
+		color: $color-background-primary;
+		@include apply-font($font-paragraph-2-desktop);
+		border-radius: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		border: none;
+		cursor: pointer;
+	
+		&:hover {
+			background-color: $color-brand;
+			color: $color-text-secondary;
+		}
+	}
+}
+
+#phone {
+	display: block;
+	width: 100%;
+}
+
+.intl-tel-input {
+  display: block;
+}
+
+.intl-tel-input .selected-flag {
+  display: inline-block;
+}
+
+.intl-tel-input .iti__country {
+  display: block;
+}
+
+// .iti__country-list .iti__search-input {
+//   display: none !important;
+// }

@@ -78,7 +78,6 @@ export default function Nav() {
     </>
   );
 
-  // return (
   //   <>
   //     <button className={`burger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
   //       <span className="burger__line"></span>

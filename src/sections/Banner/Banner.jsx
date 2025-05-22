@@ -8,30 +8,6 @@ import slide1 from '../../assets/slide-1-desktop.avif';
 import slide2 from '../../assets/slide-2-desktop.avif';
 import slide3 from '../../assets/slide-3-desktop.avif';
 
-// export default function Banner() {
-
-//   return (
-//     <section class="banner">
-//     <div class="banner__background">
-//       <div class="banner__slide slide-1 active"></div>
-//       <div class="banner__slide slide-2"></div>
-//       <div class="banner__slide slide-3"></div>
-//     </div>
-    
-//     <button class="banner__arrow banner__arrow--left">
-//       <svg viewBox="0 0 24 24" class="arrow-icon">
-//         <path d="M15 6l-6 6 6 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-//       </svg>
-//     </button>
-//     <button class="banner__arrow banner__arrow--right">
-//       <svg viewBox="0 0 24 24" class="arrow-icon">
-//         <path d="M9 6l6 6-6 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-//       </svg>
-//     </button>
-//     </section>
-//   )
-// };
-
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideInterval = useRef(null);

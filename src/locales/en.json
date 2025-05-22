@@ -150,5 +150,21 @@
   "mission and vision title": "Mission of KVINT:",
   "mission and vision text": "Our mission is to deliver comprehensive and innovative solutions in the field of pumping equipment, helping our clients worldwide achieve their goals. We are committed to integrating advanced technologies and best engineering practices to ensure the reliability, efficiency, and longevity of our solutions. We believe that only through quality and professionalism can long-term success be achieved, which is why our company is dedicated to creating value for our clients, employees, and partners.",
   "vision title": "Vision of KVINT:",
-  "vision text": "We envision <strong>KVINT</strong> as a global leader in the engineering industry, specializing in pumping solutions. Our goal is to set the standards in quality, innovation, and sustainable development. We strive not only to provide the best products and services but also to inspire our employees and clients to reach new heights in technological progress and efficiency. We are confident that the synergy of experience, technology, and motivation positions us to shape the future of pumping technology."
+  "vision text": "We envision <strong>KVINT</strong> as a global leader in the engineering industry, specializing in pumping solutions. Our goal is to set the standards in quality, innovation, and sustainable development. We strive not only to provide the best products and services but also to inspire our employees and clients to reach new heights in technological progress and efficiency. We are confident that the synergy of experience, technology, and motivation positions us to shape the future of pumping technology.",
+  "contact title": "Contact us",
+  "contact text": "You can use the form below to contact us via our website. We would like to ask you to fill in as many fields as possible, so that we can contact you as soon as possible.",
+  "contact first name": "First name *",
+  "contact first name placeholder": "Enter a first name",
+  "contact first name error": "Enter a first name.",
+  "contact last name": "Last name *",
+  "contact last name placeholder": "Enter a last name",
+  "contact last name error": "Enter a last name.",
+  "contact email": "Email *",
+  "contact email placeholder": "example@mysite.com",
+  "contact email error": "Enter an email address like example@mysite.com.",
+  "contact phone": "Phone",
+  "contact phone placeholder": "Enter your phone",
+  "contact message": "Message",
+  "contact message placeholder": "Your message...",
+  "contact button": "Send"
 }

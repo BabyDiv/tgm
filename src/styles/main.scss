@@ -1,10 +1,11 @@
+@use '../sections/About/About.module.scss';
+@use '../sections/Advantages/Advantages.module.scss';
 @use '../sections/Banner/Banner.module.scss';
 @use '../sections/Conclusion/Conclusion.module.scss';
+@use '../sections/Contact/Contact.module.scss';
+@use '../sections/Design/Design.module.scss';
 @use '../sections/Engineering/Engineering.module.scss';
 @use '../sections/Expertise/Expertise.module.scss';
-@use '../sections/Design/Design.module.scss';
-@use '../sections/Advantages/Advantages.module.scss';
-@use '../sections/About/About.module.scss';
 @use '../sections/Footer/Footer.module.scss';
 @use '../sections/Header/Header.module.scss';
 @use '../sections/Hero/Hero.module.scss';
@@ -18,6 +19,7 @@
 @use '../sections/Top/Top.module.scss';
 @use '../sections/TopAbout/TopAbout.module.scss';
 @use '../sections/TopManagement/TopManagement.module.scss';
+@use '../sections/TopVision/TopVision.module.scss';
 @use '../sections/Vision/Vision.module.scss';
 @use './mixins' as *;
 @use './variables' as *;

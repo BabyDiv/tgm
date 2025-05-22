@@ -65,7 +65,7 @@ export default function Nav() {
             <Link href="/about" className="nav__link">{t('about')}</Link>
             <ul className={`nav__dropdown ${activeDropdown === 'about' ? 'show' : ''}`}>
               <li>
-                <Link href="/about/vision" className="nav__dropdown-link">{t('mission and vision')}</Link>
+                <Link href="/vision" className="nav__dropdown-link">{t('mission and vision')}</Link>
               </li>
             </ul>
           </li>

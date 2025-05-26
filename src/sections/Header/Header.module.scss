@@ -17,6 +17,10 @@
 		flex-direction: column;
 		gap: 12px;
 
+		.logo {
+			cursor: pointer;
+		}
+
 		.logo__img {
 			width: auto;
 			height: 40px;

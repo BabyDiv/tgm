@@ -89,20 +89,7 @@ function LanguageSwitcher() {
         lineNumber: 16,
         columnNumber: 5
     }, this);
-} // export default function LanguageSwitcher() {
- //   const { locale, setLocale } = useLanguage();
- //   return (
- //     <div className="language-switcher">
- //       <Select
- //         options={options}
- //         defaultValue={options.find(o => o.value === locale)}
- //         onChange={(selected) => setLocale(selected.value)}
- //         classNamePrefix="lang"
- //         // menuPlacement="top"
- //       />
- //     </div>
- //   );
- // }
+}
 _s(LanguageSwitcher, "QuDHc5OP5OCt9T+RsBN8EaINh4Y=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"]
@@ -462,6 +449,7 @@ __turbopack_context__.v({
   "contacts__text": "Header-module-scss-module__beOjDW__contacts__text",
   "header": "Header-module-scss-module__beOjDW__header",
   "info": "Header-module-scss-module__beOjDW__info",
+  "logo": "Header-module-scss-module__beOjDW__logo",
   "logo__img": "Header-module-scss-module__beOjDW__logo__img",
 });
 }}),
@@ -491,7 +479,8 @@ function Header() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Header$2f$Header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].info,
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "/",
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Header$2f$Header$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logo,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$logo$2e$svg$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$logo$2e$svg__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
@@ -913,7 +902,7 @@ function Hero() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Hero$2f$Hero$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hero__wrapper,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "#",
+                            href: "/contact",
                             className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Hero$2f$Hero$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].button} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Hero$2f$Hero$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].hero__button}`,
                             children: t('contact us')
                         }, void 0, false, {
@@ -1334,7 +1323,7 @@ __turbopack_context__.v({
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/design.3d9dcd89.svg");}}),
+__turbopack_context__.v("/_next/static/media/design.355fc435.svg");}}),
 "[project]/src/assets/design.svg.mjs { IMAGE => \"[project]/src/assets/design.svg (static in ecmascript)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1347,8 +1336,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$design$2e$s
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$design$2e$svg__$28$static__in__ecmascript$29$__["default"],
-    width: 80,
-    height: 80,
+    width: 33,
+    height: 32,
     blurDataURL: null,
     blurWidth: 0,
     blurHeight: 0
@@ -1361,7 +1350,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/management.44954c46.svg");}}),
+__turbopack_context__.v("/_next/static/media/management.1523fdbe.svg");}}),
 "[project]/src/assets/management.svg.mjs { IMAGE => \"[project]/src/assets/management.svg (static in ecmascript)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1374,8 +1363,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$management$
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$management$2e$svg__$28$static__in__ecmascript$29$__["default"],
-    width: 80,
-    height: 80,
+    width: 33,
+    height: 32,
     blurDataURL: null,
     blurWidth: 0,
     blurHeight: 0
@@ -1388,7 +1377,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/engineering.62c70b40.svg");}}),
+__turbopack_context__.v("/_next/static/media/engineering.36d48c41.svg");}}),
 "[project]/src/assets/engineering.svg.mjs { IMAGE => \"[project]/src/assets/engineering.svg (static in ecmascript)\" } [app-client] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1401,8 +1390,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$engineering
 ;
 const __TURBOPACK__default__export__ = {
     src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$engineering$2e$svg__$28$static__in__ecmascript$29$__["default"],
-    width: 79,
-    height: 79,
+    width: 33,
+    height: 32,
     blurDataURL: null,
     blurWidth: 0,
     blurHeight: 0

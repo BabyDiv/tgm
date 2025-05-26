@@ -855,6 +855,10 @@
   display: flex;
 }
 
+.header .info .logo {
+  cursor: pointer;
+}
+
 .header .info .logo__img {
   z-index: 1;
   width: auto;

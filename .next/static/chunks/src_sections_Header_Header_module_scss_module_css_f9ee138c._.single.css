@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.Header-module-scss-module__beOjDW__header .Header-module-scss-module__beOjDW__info .Header-module-scss-module__beOjDW__logo {
+  cursor: pointer;
+}
+
 .Header-module-scss-module__beOjDW__header .Header-module-scss-module__beOjDW__info .Header-module-scss-module__beOjDW__logo__img {
   z-index: 1;
   width: auto;

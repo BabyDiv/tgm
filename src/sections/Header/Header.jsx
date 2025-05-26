@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
     <div className={styles.info}>
-      <div className={styles.logo}>
+      <a href="/" className={styles.logo}>
         <Image src={logo} className={styles.logo__img} alt="Logo" />
-      </div>
+      </a>
       <div className={styles.contacts}>
         <div className={styles.contacts__item}>
           <svg className={styles.contacts__icon} data-bbox="20 20 160 159.999" viewBox="0 0 200 200" height="22.4" width="22.4" xmlns="http://www.w3.org/2000/svg" data-type="shape">

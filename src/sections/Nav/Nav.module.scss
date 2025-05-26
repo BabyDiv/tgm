@@ -110,10 +110,10 @@
 		-moz-appearance: none;
 		background-color: $color-background-primary;
 		border: 1px solid #ccc;
+		border-radius: 0;
 		padding: 8px 32px 8px 12px;
 		@include apply-font($font-nav-tablet);
 		color: $color-text-primary;
-		border-radius: 0;
 		background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
 		background-repeat: no-repeat;
 		background-position: right 10px center;
@@ -123,6 +123,7 @@
 
 		&:focus {
 			background-color: $color-background-primary;
+			color: $color-text-primary;
 			border-color: $color-brand;
 			box-shadow: 0 0 0 2px $color-brand;
 		}
@@ -131,6 +132,29 @@
 	.language-switcher {
 		position: relative;
 		display: inline-block;
+		color: $color-text-primary;
+	}
+
+	.lang__indicator-separator {
+		display: none;
+	}
+
+	.lang__single-value {
+		color: $color-text-primary;
+		font-weight: 200;
+	}
+
+	.lang__menu {
+		border-radius: 0;
+		top: 0;
+	}
+
+	.lang__option {
+		color: $color-text-primary;
+	}
+
+	.lang__control {
+		border-radius: 0;
 	}
 }
 

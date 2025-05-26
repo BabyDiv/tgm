@@ -3,10 +3,10 @@
   "/favicon.ico/route": "/favicon.ico",
   "/contact/page": "/contact",
   "/engineering/page": "/engineering",
-  "/design/page": "/design",
-  "/management/page": "/management",
-  "/page": "/",
-  "/vision/page": "/vision",
   "/about/page": "/about",
-  "/services/page": "/services"
+  "/page": "/",
+  "/design/page": "/design",
+  "/services/page": "/services",
+  "/management/page": "/management",
+  "/vision/page": "/vision"
 }

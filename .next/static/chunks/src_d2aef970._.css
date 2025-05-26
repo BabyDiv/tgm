@@ -973,7 +973,7 @@
 
 .hero__background {
   filter: brightness(.4);
-  background: url("../media/bg-mobile.41fe91ed.webp") center / cover no-repeat fixed;
+  background: url("../media/bg-mobile.41fe91ed.webp") center / cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -983,7 +983,7 @@
 
 @media (width >= 768px) {
   .hero__background {
-    background: url("../media/bg-desktop.6268addc.webp") center / cover no-repeat;
+    background: url("../media/bg-desktop.6268addc.webp") center / cover no-repeat fixed;
   }
 }
 
@@ -2556,7 +2556,7 @@ body {
 
 .Hero-module-scss-module__e8_cOa__hero__background {
   filter: brightness(.4);
-  background: url("../media/bg-mobile.41fe91ed.webp") center / cover no-repeat fixed;
+  background: url("../media/bg-mobile.41fe91ed.webp") center / cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2566,7 +2566,7 @@ body {
 
 @media (width >= 768px) {
   .Hero-module-scss-module__e8_cOa__hero__background {
-    background: url("../media/bg-desktop.6268addc.webp") center / cover no-repeat;
+    background: url("../media/bg-desktop.6268addc.webp") center / cover no-repeat fixed;
   }
 }
 

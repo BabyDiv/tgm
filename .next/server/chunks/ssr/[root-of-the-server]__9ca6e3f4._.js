@@ -674,25 +674,26 @@ function Footer() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Footer$2f$Footer$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].footer__text,
                             children: [
-                                "TOO «ЦелинГидромашЭкспорт» ",
+                                t('footer llp'),
+                                " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/sections/Footer/Footer.jsx",
                                     lineNumber: 17,
-                                    columnNumber: 33
+                                    columnNumber: 24
                                 }, this),
-                                "Казахстан, г. Астана, район Сарыарка",
+                                t('footer city'),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/sections/Footer/Footer.jsx",
                                     lineNumber: 18,
-                                    columnNumber: 47
+                                    columnNumber: 29
                                 }, this),
-                                "улица Бейбітшілік, здание 14, офис 1507",
+                                t('footer street office'),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/sections/Footer/Footer.jsx",
                                     lineNumber: 19,
-                                    columnNumber: 45
+                                    columnNumber: 33
                                 }, this),
-                                "почтовый индекс 010000"
+                                t('footer postal code')
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/sections/Footer/Footer.jsx",

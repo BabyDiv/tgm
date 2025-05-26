@@ -89,20 +89,7 @@ function LanguageSwitcher() {
         lineNumber: 16,
         columnNumber: 5
     }, this);
-} // export default function LanguageSwitcher() {
- //   const { locale, setLocale } = useLanguage();
- //   return (
- //     <div className="language-switcher">
- //       <Select
- //         options={options}
- //         defaultValue={options.find(o => o.value === locale)}
- //         onChange={(selected) => setLocale(selected.value)}
- //         classNamePrefix="lang"
- //         // menuPlacement="top"
- //       />
- //     </div>
- //   );
- // }
+}
 _s(LanguageSwitcher, "QuDHc5OP5OCt9T+RsBN8EaINh4Y=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"]

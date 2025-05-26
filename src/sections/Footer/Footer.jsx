@@ -14,10 +14,10 @@ export default function Footer() {
 				<div className={`${styles.footer__block} ${styles['footer__block--address']}`}>
 					<h3 className={styles.footer__title}>{t('footer address title')}</h3>
 					<p className={styles.footer__text}>
-					TOO «ЦелинГидромашЭкспорт» <br />
-          Казахстан, г. Астана, район Сарыарка<br />
-					улица Бейбітшілік, здание 14, офис 1507<br />
-					почтовый индекс 010000
+					{t('footer llp')} <br />
+          {t('footer city')}<br />
+					{t('footer street office')}<br />
+					{t('footer postal code')}
 					</p>
 				</div>
 

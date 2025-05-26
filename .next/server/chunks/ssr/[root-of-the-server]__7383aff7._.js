@@ -108,20 +108,7 @@ function LanguageSwitcher() {
         lineNumber: 16,
         columnNumber: 5
     }, this);
-} // export default function LanguageSwitcher() {
- //   const { locale, setLocale } = useLanguage();
- //   return (
- //     <div className="language-switcher">
- //       <Select
- //         options={options}
- //         defaultValue={options.find(o => o.value === locale)}
- //         onChange={(selected) => setLocale(selected.value)}
- //         classNamePrefix="lang"
- //         // menuPlacement="top"
- //       />
- //     </div>
- //   );
- // }
+}
 }}),
 "[project]/src/sections/Nav/Nav.module.scss.module.css [app-ssr] (css module)": ((__turbopack_context__) => {
 

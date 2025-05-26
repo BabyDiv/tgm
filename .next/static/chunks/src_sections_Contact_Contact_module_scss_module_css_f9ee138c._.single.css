@@ -1,0 +1,159 @@
+/* [project]/src/sections/Contact/Contact.module.scss.module.css [app-client] (css) */
+.Contact-module-scss-module__eVUb_G__contact {
+  flex-direction: column;
+  padding: 30px 16%;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .Contact-module-scss-module__eVUb_G__contact {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    padding: 60px 12%;
+    display: grid;
+  }
+}
+
+.Contact-module-scss-module__eVUb_G__contact__title {
+  color: #4ca89d;
+  margin: 30px 0;
+  font-family: Geometria Medium;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .Contact-module-scss-module__eVUb_G__contact__title {
+    margin-top: 0;
+  }
+}
+
+@media (width >= 1064px) {
+  .Contact-module-scss-module__eVUb_G__contact__title {
+    font-family: Geometria Medium;
+    font-size: 52px;
+    line-height: 1em;
+  }
+}
+
+.Contact-module-scss-module__eVUb_G__contact__text {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: Geometria Light;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+@media (width >= 768px) {
+  .Contact-module-scss-module__eVUb_G__contact__text {
+    margin-top: 18px;
+    margin-bottom: 50px;
+    font-family: Geometria Light;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}
+
+.Contact-module-scss-module__eVUb_G__contact__form {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .Contact-module-scss-module__eVUb_G__contact__form {
+    gap: 24px;
+  }
+}
+
+.Contact-module-scss-module__eVUb_G__contact label {
+  flex-direction: column;
+  display: flex;
+}
+
+.Contact-module-scss-module__eVUb_G__contact label span {
+  color: #000;
+  font-family: Geometria Light;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.Contact-module-scss-module__eVUb_G__contact input, .Contact-module-scss-module__eVUb_G__contact textarea {
+  box-sizing: border-box;
+  color: #000;
+  resize: none;
+  background-color: #fff;
+  border: 1px solid #646464;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px 12px;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+.Contact-module-scss-module__eVUb_G__contact input:active, .Contact-module-scss-module__eVUb_G__contact input:focus-visible, .Contact-module-scss-module__eVUb_G__contact textarea:active, .Contact-module-scss-module__eVUb_G__contact textarea:focus-visible {
+  color: #646464;
+  border-radius: 0;
+  outline: none;
+}
+
+.Contact-module-scss-module__eVUb_G__contact .Contact-module-scss-module__eVUb_G__error {
+  color: red;
+  margin-top: 8px;
+  font-size: .85em;
+}
+
+.Contact-module-scss-module__eVUb_G__contact__button {
+  text-align: center;
+  color: #fff;
+  border-radius: none;
+  letter-spacing: 0;
+  cursor: pointer;
+  background-color: #20a69b;
+  border: none;
+  width: 100%;
+  margin-top: 24px;
+  padding: 11px 15px;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Contact-module-scss-module__eVUb_G__contact__button:hover {
+  color: #fff;
+  background-color: #4ca89d;
+}
+
+#Contact-module-scss-module__eVUb_G__phone {
+  width: 100%;
+  display: block;
+}
+
+.Contact-module-scss-module__eVUb_G__iti--allow-dropdown {
+  margin-top: 6px;
+}
+
+.Contact-module-scss-module__eVUb_G__intl-tel-input {
+  display: block;
+}
+
+.Contact-module-scss-module__eVUb_G__intl-tel-input .Contact-module-scss-module__eVUb_G__selected-flag {
+  display: inline-block;
+}
+
+.Contact-module-scss-module__eVUb_G__intl-tel-input .Contact-module-scss-module__eVUb_G__iti__country {
+  display: block;
+}
+
+/*# sourceMappingURL=src_sections_Contact_Contact_module_scss_module_css_f9ee138c._.single.css.map*/

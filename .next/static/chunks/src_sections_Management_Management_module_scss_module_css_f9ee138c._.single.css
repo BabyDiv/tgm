@@ -1,0 +1,89 @@
+/* [project]/src/sections/Management/Management.module.scss.module.css [app-client] (css) */
+.Management-module-scss-module__4GeGqq__management {
+  padding: 30px 16%;
+}
+
+@media (width >= 768px) {
+  .Management-module-scss-module__4GeGqq__management {
+    padding: 60px 16%;
+  }
+}
+
+.Management-module-scss-module__4GeGqq__management__heading {
+  color: #4ca89d;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: Geometria Medium;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .Management-module-scss-module__4GeGqq__management__heading {
+    margin-bottom: 42px;
+    font-family: Geometria Medium;
+    font-size: 52px;
+    line-height: 1em;
+  }
+}
+
+.Management-module-scss-module__4GeGqq__management__title {
+  letter-spacing: 0;
+  color: #4ca89d;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-family: Geometria Medium;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.Management-module-scss-module__4GeGqq__management__title:first-child {
+  margin-top: 0;
+}
+
+@media (width >= 768px) {
+  .Management-module-scss-module__4GeGqq__management__title {
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-family: Geometria Medium;
+    font-size: 22px;
+    line-height: 1.2em;
+  }
+}
+
+.Management-module-scss-module__4GeGqq__management__text, .Management-module-scss-module__4GeGqq__management__item, .Management-module-scss-module__4GeGqq__management__conclusion {
+  color: #000;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+@media (width >= 768px) {
+  .Management-module-scss-module__4GeGqq__management__text, .Management-module-scss-module__4GeGqq__management__item, .Management-module-scss-module__4GeGqq__management__conclusion {
+    font-family: Geometria Light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+}
+
+.Management-module-scss-module__4GeGqq__management strong {
+  font-family: Geometria Medium;
+}
+
+.Management-module-scss-module__4GeGqq__management__list {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+@media (width >= 768px) {
+  .Management-module-scss-module__4GeGqq__management__list {
+    margin-top: 12px;
+    padding-left: 40px;
+  }
+}
+
+/*# sourceMappingURL=src_sections_Management_Management_module_scss_module_css_f9ee138c._.single.css.map*/

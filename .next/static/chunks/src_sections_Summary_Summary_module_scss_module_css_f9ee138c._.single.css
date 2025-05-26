@@ -1,0 +1,28 @@
+/* [project]/src/sections/Summary/Summary.module.scss.module.css [app-client] (css) */
+.Summary-module-scss-module__jgQRdW__summary {
+  padding: 30px 16%;
+}
+
+@media (width >= 768px) {
+  .Summary-module-scss-module__jgQRdW__summary {
+    padding: 60px 16%;
+  }
+}
+
+.Summary-module-scss-module__jgQRdW__summary__text {
+  color: #000;
+  margin: 0;
+  font-family: Geometria Light;
+  font-size: 19px;
+  line-height: 1.4em;
+}
+
+@media (width >= 768px) {
+  .Summary-module-scss-module__jgQRdW__summary__text {
+    font-family: Geometria Light;
+    font-size: 20px;
+    line-height: 1.4em;
+  }
+}
+
+/*# sourceMappingURL=src_sections_Summary_Summary_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -48,27 +48,15 @@
   }
 
   .slide-1 { 
-    background-image: url('../../assets/design-1-mobile.avif');
-
-    @media(min-width: 768px) {
-      background-image: url('../../assets/design-1-desktop.avif');
-    }
+    background-image: url('../../assets/design-1-desktop.webp');
   }
 
   .slide-2 {
-    background-image: url('../../assets/design-1-mobile.avif');
-
-    @media(min-width: 768px) {
-      background-image: url('../../assets/design-2-desktop.avif');
-    }			
+    background-image: url('../../assets/slide-2-desktop.webp');		
   }
 
   .slide-11 { 
-    background-image: url('../../assets/about-mobile.avif');
-
-    @media(min-width: 768px) {
-      background-image: url('../../assets/about-desktop.avif');
-    }
+    background-image: url('../../assets/intro-desktop.webp');
   }
 
   &__arrow {

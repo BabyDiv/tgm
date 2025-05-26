@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/sections/Mission/Mission.module.scss.module.css"],"sourcesContent":[".mission{padding:0 16% 30px 16%}@media(min-width: 768px){.mission{padding:0 16% 60px 16%}}.mission__title{font-family:\"Geometria Medium\";font-size:28px;line-height:1.2em;color:#4ca89d;background-color:#fff;padding:20px 0}@media(min-width: 768px){.mission__title{font-family:\"Geometria Medium\";font-size:52px;line-height:1em;padding:40px 0}}.mission__text{font-family:\"Geometria Light\";font-size:16px;font-weight:400;line-height:1.6em;color:#000}.mission__text:last-child{margin-top:12px}@media(min-width: 768px){.mission__text{font-family:\"Geometria Light\";font-size:16px;font-weight:400;line-height:1.6em}}.mission__text:last-child{margin-top:20px}.mission p strong{font-family:\"Geometria Medium\"}"],"names":[],"mappings":"AAAA;;;;AAAgC;EAAyB;;;;;AAAiC;;;;;;;;;AAAmI;EAAyB;;;;;;;;AAA8F;;;;;;;;AAAmJ;EAAyB;;;;;;;;AAA+F;;;;AAA0C"}}]
+}

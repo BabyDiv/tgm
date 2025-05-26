@@ -1,4 +1,4 @@
-// File: /Users/innastacenko/Desktop/Kvint-react/src/app/layout.js
+// File: /Users/innastacenko/Desktop/new/Kvint-react/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

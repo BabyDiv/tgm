@@ -1,0 +1,95 @@
+/* [project]/src/sections/TopManagement/TopManagement.module.scss.module.css [app-client] (css) */
+.TopManagement-module-scss-module__WU6Suq__top {
+  height: 40vh;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.TopManagement-module-scss-module__WU6Suq__top:hover .TopManagement-module-scss-module__WU6Suq__top__arrow {
+  opacity: 1;
+}
+
+@media (width >= 768px) {
+  .TopManagement-module-scss-module__WU6Suq__top {
+    height: 35vh;
+    padding: 60px 0;
+  }
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__background {
+  filter: brightness(.7);
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__slide {
+  opacity: 0;
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  transition: opacity 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__slide.TopManagement-module-scss-module__WU6Suq__active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.TopManagement-module-scss-module__WU6Suq__top .TopManagement-module-scss-module__WU6Suq__slide-1 {
+  background-image: url("../media/design-2-desktop.1a0b7dd7.webp");
+}
+
+.TopManagement-module-scss-module__WU6Suq__top .TopManagement-module-scss-module__WU6Suq__slide-2 {
+  background-image: url("../media/design-1-desktop.572e83d6.webp");
+}
+
+.TopManagement-module-scss-module__WU6Suq__top .TopManagement-module-scss-module__WU6Suq__slide-11 {
+  background-image: url("../media/about-desktop.1d5e9068.webp");
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__arrow {
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 70px;
+  height: 45px;
+  transition: opacity .3s, box-shadow .3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__arrow:hover .TopManagement-module-scss-module__WU6Suq__arrow-icon {
+  filter: drop-shadow(2px 2px 4px #000c);
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__arrow.TopManagement-module-scss-module__WU6Suq__left {
+  left: 20px;
+}
+
+.TopManagement-module-scss-module__WU6Suq__top__arrow.TopManagement-module-scss-module__WU6Suq__right {
+  right: 20px;
+}
+
+.TopManagement-module-scss-module__WU6Suq__top .TopManagement-module-scss-module__WU6Suq__arrow-icon {
+  stroke-width: 3px;
+  width: 62px;
+  height: 82px;
+  transition: filter .3s;
+}
+
+/*# sourceMappingURL=src_sections_TopManagement_TopManagement_module_scss_module_css_f9ee138c._.single.css.map*/

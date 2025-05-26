@@ -4,9 +4,9 @@ import '../../styles/main.scss';
 import { useLanguage } from '../../context/LanguageContext';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Banner.module.scss';
-import slide1 from '../../assets/slide-1-desktop.avif';
-import slide2 from '../../assets/slide-2-desktop.avif';
-import slide3 from '../../assets/slide-3-desktop.avif';
+import slide1 from '../../assets/slide-1-desktop.webp';
+import slide2 from '../../assets/slide-2-desktop.webp';
+import slide3 from '../../assets/slide-3-desktop.webp';
 
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);

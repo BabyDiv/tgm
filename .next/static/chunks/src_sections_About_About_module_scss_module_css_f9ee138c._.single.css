@@ -1,0 +1,179 @@
+/* [project]/src/sections/About/About.module.scss.module.css [app-client] (css) */
+.About-module-scss-module__Eio3EG__about {
+  padding: 0 10% 30px;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about {
+    padding: 60px 8%;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__us {
+  border-bottom: 1px solid #4ca89d;
+  flex-direction: column;
+  justify-content: left;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__us {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    display: grid;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__us .About-module-scss-module__Eio3EG__about__title {
+  color: #4ca89d;
+  margin: 30px 0;
+  font-family: Geometria Medium;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__us .About-module-scss-module__Eio3EG__about__title {
+    letter-spacing: 0;
+    margin: 0;
+    font-family: Geometria Medium;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__us .About-module-scss-module__Eio3EG__about__text {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: Geometria Light;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__us .About-module-scss-module__Eio3EG__about__text {
+    margin-top: 18px;
+    margin-bottom: 50px;
+    font-family: Geometria Light;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__join {
+  border-bottom: 1px solid #4ca89d;
+  flex-direction: column;
+  justify-content: left;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__join {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    display: grid;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__title {
+  color: #4ca89d;
+  margin: 30px 0;
+  font-family: Geometria Medium;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__title {
+    letter-spacing: 0;
+    margin: 0;
+    font-family: Geometria Medium;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__item {
+  color: #000;
+  padding-bottom: 20px;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__item {
+    font-family: Geometria Light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+
+  .About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__item:first-child {
+    padding-top: 40px;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__item:last-child {
+  padding-bottom: 30px;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__join .About-module-scss-module__Eio3EG__about__item:last-child {
+    padding-bottom: 50px;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__conclusion p {
+  color: #000;
+}
+
+.About-module-scss-module__Eio3EG__about__conclusion p:first-child {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-family: Geometria Medium;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__conclusion p:first-child {
+    margin-top: 50px;
+    font-family: Geometria Medium;
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about__conclusion p:last-child {
+  font-family: Geometria Light;
+  font-size: 19px;
+  line-height: 1.4em;
+}
+
+@media (width >= 768px) {
+  .About-module-scss-module__Eio3EG__about__conclusion p:last-child {
+    font-family: Geometria Light;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}
+
+.About-module-scss-module__Eio3EG__about strong {
+  font-family: Geometria Medium;
+}
+
+/*# sourceMappingURL=src_sections_About_About_module_scss_module_css_f9ee138c._.single.css.map*/

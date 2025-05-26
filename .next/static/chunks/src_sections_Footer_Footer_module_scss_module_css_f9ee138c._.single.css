@@ -1,0 +1,65 @@
+/* [project]/src/sections/Footer/Footer.module.scss.module.css [app-client] (css) */
+.Footer-module-scss-module__giXM_a__footer__container {
+  color: #fff;
+  background-color: #4ca89d;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px 16%;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .Footer-module-scss-module__giXM_a__footer__container {
+    padding: 60px 16%;
+  }
+}
+
+.Footer-module-scss-module__giXM_a__footer__title {
+  letter-spacing: 0;
+  font-family: Geometria Medium;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+@media (width >= 768px) {
+  .Footer-module-scss-module__giXM_a__footer__title {
+    letter-spacing: 0;
+    font-family: Geometria Medium;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4em;
+  }
+}
+
+.Footer-module-scss-module__giXM_a__footer__text, .Footer-module-scss-module__giXM_a__footer__text a {
+  color: #fff;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+@media (width >= 768px) {
+  .Footer-module-scss-module__giXM_a__footer__text, .Footer-module-scss-module__giXM_a__footer__text a {
+    font-family: Geometria Light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+}
+
+.Footer-module-scss-module__giXM_a__footer__text:nth-child(2), .Footer-module-scss-module__giXM_a__footer__text a:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.Footer-module-scss-module__giXM_a__footer__text:last-child, .Footer-module-scss-module__giXM_a__footer__text a:last-child {
+  margin-top: 0;
+}
+
+.Footer-module-scss-module__giXM_a__footer__block--copyright p {
+  color: #d9d9d9;
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=src_sections_Footer_Footer_module_scss_module_css_f9ee138c._.single.css.map*/

@@ -1,0 +1,55 @@
+/* [project]/src/sections/Mission/Mission.module.scss.module.css [app-client] (css) */
+.Mission-module-scss-module__h8rE_W__mission {
+  padding: 0 16% 30px;
+}
+
+@media (width >= 768px) {
+  .Mission-module-scss-module__h8rE_W__mission {
+    padding: 0 16% 60px;
+  }
+}
+
+.Mission-module-scss-module__h8rE_W__mission__title {
+  color: #4ca89d;
+  background-color: #fff;
+  padding: 20px 0;
+  font-family: Geometria Medium;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .Mission-module-scss-module__h8rE_W__mission__title {
+    padding: 40px 0;
+    font-family: Geometria Medium;
+    font-size: 52px;
+    line-height: 1em;
+  }
+}
+
+.Mission-module-scss-module__h8rE_W__mission__text {
+  color: #000;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+@media (width >= 768px) {
+  .Mission-module-scss-module__h8rE_W__mission__text {
+    font-family: Geometria Light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+}
+
+.Mission-module-scss-module__h8rE_W__mission__text:last-child {
+  margin-top: 20px;
+}
+
+.Mission-module-scss-module__h8rE_W__mission p strong {
+  font-family: Geometria Medium;
+}
+
+/*# sourceMappingURL=src_sections_Mission_Mission_module_scss_module_css_f9ee138c._.single.css.map*/

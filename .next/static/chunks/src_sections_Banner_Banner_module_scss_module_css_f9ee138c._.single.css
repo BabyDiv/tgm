@@ -1,0 +1,96 @@
+/* [project]/src/sections/Banner/Banner.module.scss.module.css [app-client] (css) */
+.Banner-module-scss-module__0-5cwa__banner {
+  height: 40vh;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.Banner-module-scss-module__0-5cwa__banner:hover .Banner-module-scss-module__0-5cwa__banner__arrow {
+  opacity: 1;
+}
+
+@media (width >= 768px) {
+  .Banner-module-scss-module__0-5cwa__banner {
+    height: 35vh;
+    padding: 60px 0;
+  }
+}
+
+.Banner-module-scss-module__0-5cwa__banner__background {
+  filter: brightness(.7);
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Banner-module-scss-module__0-5cwa__banner__slide {
+  opacity: 0;
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  transition: opacity 1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Banner-module-scss-module__0-5cwa__banner__slide.Banner-module-scss-module__0-5cwa__active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.Banner-module-scss-module__0-5cwa__banner .Banner-module-scss-module__0-5cwa__slide-1 {
+  background-image: url("../media/slide-1-desktop.cfb28b9e.webp");
+}
+
+.Banner-module-scss-module__0-5cwa__banner .Banner-module-scss-module__0-5cwa__slide-2 {
+  background-image: url("../media/slide-2-desktop.c78cd184.webp");
+}
+
+.Banner-module-scss-module__0-5cwa__banner .Banner-module-scss-module__0-5cwa__slide-3 {
+  background-image: url("../media/slide-3-desktop.197721ad.webp");
+}
+
+.Banner-module-scss-module__0-5cwa__banner__arrow {
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 70px;
+  height: 45px;
+  transition: opacity .3s, box-shadow .3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Banner-module-scss-module__0-5cwa__banner__arrow:hover .Banner-module-scss-module__0-5cwa__arrow-icon {
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #000c);
+}
+
+.Banner-module-scss-module__0-5cwa__banner .Banner-module-scss-module__0-5cwa__arrow-icon {
+  stroke-width: 3px;
+  width: 62px;
+  height: 82px;
+  transition: filter .3s;
+}
+
+.Banner-module-scss-module__0-5cwa__banner .Banner-module-scss-module__0-5cwa__left {
+  left: 20px;
+}
+
+.Banner-module-scss-module__0-5cwa__banner .Banner-module-scss-module__0-5cwa__right {
+  right: 20px;
+}
+
+/*# sourceMappingURL=src_sections_Banner_Banner_module_scss_module_css_f9ee138c._.single.css.map*/

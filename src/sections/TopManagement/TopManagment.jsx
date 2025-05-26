@@ -5,9 +5,9 @@ import Image from 'next/image';
 import '../../styles/main.scss';
 
 import { useEffect, useRef, useState } from 'react';
-import slide1 from '../../assets/design-2-desktop.avif';
-import slide2 from '../../assets/design-1-desktop.avif';
-import slide3 from '../../assets/about-desktop.avif';
+import slide1 from '../../assets/design-2-desktop.webp';
+import slide2 from '../../assets/design-1-desktop.webp';
+import slide3 from '../../assets/about-desktop.webp';
 import styles from './TopManagement.module.scss';
 
 export default function TopManagement() {

@@ -1,0 +1,81 @@
+/* [project]/src/sections/Expertise/Expertise.module.scss.module.css [app-client] (css) */
+.Expertise-module-scss-module__58H3dG__expertise {
+  width: 100%;
+}
+
+.Expertise-module-scss-module__58H3dG__expertise__heading {
+  color: #4ca89d;
+  background-color: #fff;
+  padding: 20px 16%;
+  font-family: Geometria Medium;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .Expertise-module-scss-module__58H3dG__expertise__heading {
+    padding: 40px 16%;
+    font-family: Geometria Medium;
+    font-size: 52px;
+    line-height: 1em;
+  }
+}
+
+.Expertise-module-scss-module__58H3dG__expertise__title {
+  letter-spacing: 0;
+  color: #4ca89d;
+  margin-bottom: 10px;
+  font-family: Geometria Medium;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+@media (width >= 768px) {
+  .Expertise-module-scss-module__58H3dG__expertise__title {
+    letter-spacing: 0;
+    margin-bottom: 12px;
+    font-family: Geometria Medium;
+    font-size: 22px;
+    line-height: 1.2em;
+  }
+}
+
+.Expertise-module-scss-module__58H3dG__expertise__text {
+  color: #000;
+  font-family: Geometria Light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+@media (width >= 768px) {
+  .Expertise-module-scss-module__58H3dG__expertise__text {
+    font-family: Geometria Light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+}
+
+.Expertise-module-scss-module__58H3dG__expertise__list {
+  background-color: #e8e6e6;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px 16%;
+  list-style-type: none;
+  display: flex;
+}
+
+@media (width >= 768px) {
+  .Expertise-module-scss-module__58H3dG__expertise__list {
+    gap: 20px;
+    padding: 60px 16%;
+  }
+}
+
+.Expertise-module-scss-module__58H3dG__expertise p strong {
+  font-family: Geometria Medium;
+}
+
+/*# sourceMappingURL=src_sections_Expertise_Expertise_module_scss_module_css_f9ee138c._.single.css.map*/

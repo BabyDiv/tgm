@@ -50,3 +50,29 @@ body {
 	background-color: $color-background-primary;
 	margin: 0 auto;
 }
+
+.iti--allow-dropdown {
+	margin-top: 6px;
+}
+
+.intl-tel-input {
+  display: block;
+	width: 100%;
+}
+
+.intl-tel-input input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#input[type=tel] {
+	width: 100%;
+}
+
+.intl-tel-input .selected-flag {
+  display: inline-block;
+}
+
+.intl-tel-input .iti__country {
+  display: block;
+}

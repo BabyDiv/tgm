@@ -500,22 +500,6 @@
   display: block;
 }
 
-.iti--allow-dropdown {
-  margin-top: 6px;
-}
-
-.intl-tel-input {
-  display: block;
-}
-
-.intl-tel-input .selected-flag {
-  display: inline-block;
-}
-
-.intl-tel-input .iti__country {
-  display: block;
-}
-
 .design {
   padding: 30px 16%;
 }
@@ -2075,6 +2059,32 @@ body {
   margin: 0 auto;
 }
 
+.iti--allow-dropdown {
+  margin-top: 6px;
+}
+
+.intl-tel-input {
+  width: 100%;
+  display: block;
+}
+
+.intl-tel-input input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#input[type="tel"] {
+  width: 100%;
+}
+
+.intl-tel-input .selected-flag {
+  display: inline-block;
+}
+
+.intl-tel-input .iti__country {
+  display: block;
+}
+
 
 /* [project]/src/sections/Nav/Nav.module.scss.module.css [app-client] (css) */
 .Nav-module-scss-module__nprNia__nav {
@@ -2682,22 +2692,6 @@ body {
 
 #Contact-module-scss-module__eVUb_G__phone {
   width: 100%;
-  display: block;
-}
-
-.Contact-module-scss-module__eVUb_G__iti--allow-dropdown {
-  margin-top: 6px;
-}
-
-.Contact-module-scss-module__eVUb_G__intl-tel-input {
-  display: block;
-}
-
-.Contact-module-scss-module__eVUb_G__intl-tel-input .Contact-module-scss-module__eVUb_G__selected-flag {
-  display: inline-block;
-}
-
-.Contact-module-scss-module__eVUb_G__intl-tel-input .Contact-module-scss-module__eVUb_G__iti__country {
   display: block;
 }
 

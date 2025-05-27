@@ -500,22 +500,6 @@
   display: block;
 }
 
-.iti--allow-dropdown {
-  margin-top: 6px;
-}
-
-.intl-tel-input {
-  display: block;
-}
-
-.intl-tel-input .selected-flag {
-  display: inline-block;
-}
-
-.intl-tel-input .iti__country {
-  display: block;
-}
-
 .design {
   padding: 30px 16%;
 }
@@ -2073,6 +2057,32 @@
 body {
   background-color: #fff;
   margin: 0 auto;
+}
+
+.iti--allow-dropdown {
+  margin-top: 6px;
+}
+
+.intl-tel-input {
+  width: 100%;
+  display: block;
+}
+
+.intl-tel-input input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#input[type="tel"] {
+  width: 100%;
+}
+
+.intl-tel-input .selected-flag {
+  display: inline-block;
+}
+
+.intl-tel-input .iti__country {
+  display: block;
 }
 
 /*# sourceMappingURL=src_styles_main_scss_css_f9ee138c._.single.css.map*/

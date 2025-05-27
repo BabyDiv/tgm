@@ -835,11 +835,7 @@ __turbopack_context__.v({
   "contact__text": "Contact-module-scss-module__eVUb_G__contact__text",
   "contact__title": "Contact-module-scss-module__eVUb_G__contact__title",
   "error": "Contact-module-scss-module__eVUb_G__error",
-  "intl-tel-input": "Contact-module-scss-module__eVUb_G__intl-tel-input",
-  "iti--allow-dropdown": "Contact-module-scss-module__eVUb_G__iti--allow-dropdown",
-  "iti__country": "Contact-module-scss-module__eVUb_G__iti__country",
   "phone": "Contact-module-scss-module__eVUb_G__phone",
-  "selected-flag": "Contact-module-scss-module__eVUb_G__selected-flag",
   "successMessage": "Contact-module-scss-module__eVUb_G__successMessage",
 });
 }}),
@@ -858,6 +854,7 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 //   const { t } = useLanguage();
 //   const phoneInputRef = useRef(null);
 //   const [errors, setErrors] = useState({});
+//   const [submitted, setSubmitted] = useState(false);
 //   useEffect(() => {
 //     if (typeof window !== "undefined") {
 //       (async () => {
@@ -878,24 +875,42 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 //       })();
 //     }
 //   }, []);
-//   const handleSubmit = (e) => {
+//   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     const form = e.target;
 //     const newErrors = {};
 //     if (!form.firstName.value.trim()) {
-//       newErrors.firstName = t("contact first name error") || "Enter first name";
+//       newErrors.firstName = t("contact first name error") || "Введите имя";
 //     }
 //     if (!form.lastName.value.trim()) {
-//       newErrors.lastName = t("contact last name error") || "Enter last name";
+//       newErrors.lastName = t("contact last name error") || "Введите фамилию";
 //     }
 //     if (!form.email.value.trim()) {
-//       newErrors.email = t("contact email error") || "Enter email";
+//       newErrors.email = t("contact email error") || "Введите email";
 //     } else if (!/\S+@\S+\.\S+/.test(form.email.value)) {
-//       newErrors.email = t("contact email error") || "Email invalid";
+//       newErrors.email = t("contact email error") || "Некорректный email";
 //     }
 //     setErrors(newErrors);
 //     if (Object.keys(newErrors).length === 0) {
-//       form.submit();
+//       const formData = new FormData(form);
+//       try {
+//         const res = await fetch("https://formspree.io/f/mnndkegr", {
+//           method: "POST",
+//           body: formData,
+//           headers: {
+//             Accept: "application/json",
+//           },
+//         });
+//         if (res.ok) {
+//           setSubmitted(true);
+//           form.reset();
+//         } else {
+//           alert("Ошибка при отправке. Попробуйте позже.");
+//         }
+//       } catch (error) {
+//         console.error(error);
+//         alert("Ошибка сети.");
+//       }
 //     }
 //   };
 //   return (
@@ -904,67 +919,157 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 //         <h1 className={styles.contact__title}>{t("contact title")}</h1>
 //         <p className={styles.contact__text}>{t("contact text")}</p>
 //       </div>
-//       <form noValidate
-//         onSubmit={handleSubmit}
-//         action="https://formspree.io/f/mnndkegr"
-//         method="POST"
-//         className={styles.contact__form}>
-//         <label>
-//           <span>{t("contact first name")}</span>
-//           <input
-//             type="text"
-//             name="firstName"
-//             placeholder={t("contact first name placeholder")}
-//           />
-//           {errors.firstName && (
-//             <small className={styles.error}>{errors.firstName}</small>
-//           )}
-//         </label>
-//         <label>
-//           <span>{t("contact last name")}</span>
-//           <input
-//             type="text"
-//             name="lastName"
-//             placeholder={t("contact last name placeholder")}
-//           />
-//           {errors.lastName && (
-//             <small className={styles.error}>{errors.lastName}</small>
-//           )}
-//         </label>
-//         <label>
-//           <span>{t("contact email")}</span>
-//           <input
-//             type="email"
-//             name="email"
-//             placeholder={t("contact email placeholder")}
-//           />
-//           {errors.email && (
-//             <small className={styles.error}>{errors.email}</small>
-//           )}
-//         </label>
-//         <label>
-//           <span>{t("contact phone")}</span>
-//           <input
-//             type="tel"
-//             id="phone"
-//             name="phone"
-//             ref={phoneInputRef}
-//             placeholder={t("contact phone placeholder")}
-//           />
-//         </label>
-//         <label>
-//           <span>{t("contact message")}</span>
-//           <textarea
-//             name="message"
-//             rows="4"
-//             placeholder={t("contact message placeholder")}
-//           />
-//         </label>
-//         <input type="text" name="_gotcha" style={{ display: "none" }} />
-//         <button type="submit" className="contact__button">
-//           {t("contact button")}
-//         </button>
-//       </form>
+//       {submitted ? (
+//         <p className={styles.successMessage}>{t("contact form message")}</p>
+//       ) : (
+//         <form noValidate onSubmit={handleSubmit} className={styles.contact__form}>
+//           <label>
+//             <span>{t("contact first name")}</span>
+//             <input type="text" name="firstName" placeholder={t("contact first name placeholder")} />
+//             {errors.firstName && <small className={styles.error}>{errors.firstName}</small>}
+//           </label>
+//           <label>
+//             <span>{t("contact last name")}</span>
+//             <input type="text" name="lastName" placeholder={t("contact last name placeholder")} />
+//             {errors.lastName && <small className={styles.error}>{errors.lastName}</small>}
+//           </label>
+//           <label>
+//             <span>{t("contact email")}</span>
+//             <input type="email" name="email" placeholder={t("contact email placeholder")} />
+//             {errors.email && <small className={styles.error}>{errors.email}</small>}
+//           </label>
+//           <label>
+//             <span>{t("contact phone")}</span>
+//             <input type="tel" id="phone" name="phone" ref={phoneInputRef} placeholder={t("contact phone placeholder")} />
+//           </label>
+//           <label>
+//             <span>{t("contact message")}</span>
+//             <textarea name="message" rows="4" placeholder={t("contact message placeholder")} />
+//           </label>
+//           <input type="text" name="_gotcha" style={{ display: "none" }} />
+//           <button type="submit" className="contact__button">
+//             {t("contact button")}
+//           </button>
+//         </form>
+//       )}
+//     </section>
+//   );
+// }
+// "use client";
+// import '../../styles/main.scss';
+// import { useLanguage } from '../../context/LanguageContext';
+// import { useEffect, useRef, useState } from 'react';
+// import styles from './Contact.module.scss';
+// import 'intl-tel-input/build/css/intlTelInput.css';
+// export default function Contact() {
+//   const { t } = useLanguage();
+//   const phoneInputRef = useRef(null);
+//   const [errors, setErrors] = useState({});
+//   const [submitted, setSubmitted] = useState(false);
+//   useEffect(() => {
+//     if (typeof window !== "undefined") {
+//       (async () => {
+//         const intlTelInput = (await import("intl-tel-input")).default;
+//         if (phoneInputRef.current) {
+//           intlTelInput(phoneInputRef.current, {
+//             initialCountry: "auto",
+//             geoIpLookup: callback => {
+//               fetch("https://ipinfo.io/json?token=<your_token>")
+//                 .then(res => res.json())
+//                 .then(data => callback(data.country))
+//                 .catch(() => callback("us"));
+//             },
+//             utilsScript:
+//               "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
+//           });
+//         }
+//       })();
+//     }
+//   }, []);
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     const form = e.target;
+//     const newErrors = {};
+//     if (!form.firstName.value.trim()) {
+//       newErrors.firstName = t("contact first name error") || "Введите имя";
+//     }
+//     if (!form.lastName.value.trim()) {
+//       newErrors.lastName = t("contact last name error") || "Введите фамилию";
+//     }
+//     if (!form.email.value.trim()) {
+//       newErrors.email = t("contact email error") || "Введите email";
+//     } else if (!/\S+@\S+\.\S+/.test(form.email.value)) {
+//       newErrors.email = t("contact email error") || "Некорректный email";
+//     }
+//     setErrors(newErrors);
+//     if (Object.keys(newErrors).length === 0) {
+//       const formData = {
+//         firstName: form.firstName.value,
+//         lastName: form.lastName.value,
+//         email: form.email.value,
+//         phone: form.phone.value,
+//         message: form.message.value,
+//       };
+//       try {
+//         const res = await fetch("/api/contact", {
+//           method: "POST",
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
+//           body: JSON.stringify(formData),
+//         });
+//         const data = await res.json();
+//         if (data.success) {
+//           setSubmitted(true);
+//           form.reset();
+//         } else {
+//           alert("Ошибка при отправке: " + data.message);
+//         }
+//       } catch (error) {
+//         console.error(error);
+//         alert("Ошибка сети. Попробуйте позже.");
+//       }
+//     }
+//   };
+//   return (
+//     <section className={styles.contact}>
+//       <div className={styles.contact__info}>
+//         <h1 className={styles.contact__title}>{t("contact title")}</h1>
+//         <p className={styles.contact__text}>{t("contact text")}</p>
+//       </div>
+//       {submitted ? (
+//         <p className={styles.successMessage}>{t("contact form message")}</p>
+//       ) : (
+//         <form noValidate onSubmit={handleSubmit} className={styles.contact__form}>
+//           <label>
+//             <span>{t("contact first name")}</span>
+//             <input type="text" name="firstName" placeholder={t("contact first name placeholder")} />
+//             {errors.firstName && <small className={styles.error}>{errors.firstName}</small>}
+//           </label>
+//           <label>
+//             <span>{t("contact last name")}</span>
+//             <input type="text" name="lastName" placeholder={t("contact last name placeholder")} />
+//             {errors.lastName && <small className={styles.error}>{errors.lastName}</small>}
+//           </label>
+//           <label>
+//             <span>{t("contact email")}</span>
+//             <input type="email" name="email" placeholder={t("contact email placeholder")} />
+//             {errors.email && <small className={styles.error}>{errors.email}</small>}
+//           </label>
+//           <label>
+//             <span>{t("contact phone")}</span>
+//             <input type="tel" id="phone" name="phone" ref={phoneInputRef} placeholder={t("contact phone placeholder")} />
+//           </label>
+//           <label>
+//             <span>{t("contact message")}</span>
+//             <textarea name="message" rows="4" placeholder={t("contact message placeholder")} />
+//           </label>
+//           <input type="text" name="_gotcha" style={{ display: "none" }} />
+//           <button type="submit" className="contact__button">
+//             {t("contact button")}
+//           </button>
+//         </form>
+//       )}
 //     </section>
 //   );
 // }
@@ -991,12 +1096,13 @@ function Contact() {
     const [submitted, setSubmitted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Contact.useEffect": ()=>{
-            if ("TURBOPACK compile-time truthy", 1) {
-                ({
+            let itiInstance;
+            if ("object" !== "undefined" && phoneInputRef.current) {
+                setTimeout({
                     "Contact.useEffect": async ()=>{
                         const intlTelInput = (await __turbopack_context__.r("[project]/node_modules/intl-tel-input/build/js/intlTelInput.js [app-client] (ecmascript, async loader)")(__turbopack_context__.i)).default;
-                        if (phoneInputRef.current) {
-                            intlTelInput(phoneInputRef.current, {
+                        if (phoneInputRef.current && !phoneInputRef.current.classList.contains("iti")) {
+                            itiInstance = intlTelInput(phoneInputRef.current, {
                                 initialCountry: "auto",
                                 geoIpLookup: {
                                     "Contact.useEffect": (callback)=>{
@@ -1013,8 +1119,15 @@ function Contact() {
                             });
                         }
                     }
-                })["Contact.useEffect"]();
+                }["Contact.useEffect"], 100);
             }
+            return ({
+                "Contact.useEffect": ()=>{
+                    if (itiInstance) {
+                        itiInstance.destroy();
+                    }
+                }
+            })["Contact.useEffect"];
         }
     }["Contact.useEffect"], []);
     const handleSubmit = async (e)=>{
@@ -1066,7 +1179,7 @@ function Contact() {
                         children: t("contact title")
                     }, void 0, false, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 222,
+                        lineNumber: 364,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1074,13 +1187,13 @@ function Contact() {
                         children: t("contact text")
                     }, void 0, false, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 223,
+                        lineNumber: 365,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                lineNumber: 221,
+                lineNumber: 363,
                 columnNumber: 7
             }, this),
             submitted ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1088,7 +1201,7 @@ function Contact() {
                 children: t("contact form message")
             }, void 0, false, {
                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                lineNumber: 227,
+                lineNumber: 369,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                 noValidate: true,
@@ -1101,7 +1214,7 @@ function Contact() {
                                 children: t("contact first name")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 231,
+                                lineNumber: 373,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1110,7 +1223,7 @@ function Contact() {
                                 placeholder: t("contact first name placeholder")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 232,
+                                lineNumber: 374,
                                 columnNumber: 13
                             }, this),
                             errors.firstName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1118,13 +1231,13 @@ function Contact() {
                                 children: errors.firstName
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 233,
+                                lineNumber: 375,
                                 columnNumber: 34
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 230,
+                        lineNumber: 372,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1133,7 +1246,7 @@ function Contact() {
                                 children: t("contact last name")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 237,
+                                lineNumber: 379,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1142,7 +1255,7 @@ function Contact() {
                                 placeholder: t("contact last name placeholder")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 238,
+                                lineNumber: 380,
                                 columnNumber: 13
                             }, this),
                             errors.lastName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1150,13 +1263,13 @@ function Contact() {
                                 children: errors.lastName
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 239,
+                                lineNumber: 381,
                                 columnNumber: 33
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 236,
+                        lineNumber: 378,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1165,7 +1278,7 @@ function Contact() {
                                 children: t("contact email")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 243,
+                                lineNumber: 385,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1174,7 +1287,7 @@ function Contact() {
                                 placeholder: t("contact email placeholder")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 244,
+                                lineNumber: 386,
                                 columnNumber: 13
                             }, this),
                             errors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
@@ -1182,13 +1295,13 @@ function Contact() {
                                 children: errors.email
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 245,
+                                lineNumber: 387,
                                 columnNumber: 30
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 242,
+                        lineNumber: 384,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1197,7 +1310,7 @@ function Contact() {
                                 children: t("contact phone")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 249,
+                                lineNumber: 391,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1205,16 +1318,20 @@ function Contact() {
                                 id: "phone",
                                 name: "phone",
                                 ref: phoneInputRef,
-                                placeholder: t("contact phone placeholder")
+                                placeholder: t("contact phone placeholder"),
+                                autoComplete: "off",
+                                style: {
+                                    width: "100%"
+                                }
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 250,
+                                lineNumber: 392,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 248,
+                        lineNumber: 390,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1223,7 +1340,7 @@ function Contact() {
                                 children: t("contact message")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 254,
+                                lineNumber: 404,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -1232,13 +1349,13 @@ function Contact() {
                                 placeholder: t("contact message placeholder")
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                                lineNumber: 255,
+                                lineNumber: 405,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 253,
+                        lineNumber: 403,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -1249,7 +1366,7 @@ function Contact() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 258,
+                        lineNumber: 408,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1258,19 +1375,19 @@ function Contact() {
                         children: t("contact button")
                     }, void 0, false, {
                         fileName: "[project]/src/sections/Contact/Contact.jsx",
-                        lineNumber: 260,
+                        lineNumber: 410,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/sections/Contact/Contact.jsx",
-                lineNumber: 229,
+                lineNumber: 371,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/sections/Contact/Contact.jsx",
-        lineNumber: 220,
+        lineNumber: 362,
         columnNumber: 5
     }, this);
 }

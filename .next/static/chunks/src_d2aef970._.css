@@ -467,6 +467,10 @@
   font-size: .85em;
 }
 
+.contact .successMessage {
+  color: red;
+}
+
 .contact__button {
   text-align: center;
   color: #fff;

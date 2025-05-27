@@ -111,6 +111,10 @@
   font-size: .85em;
 }
 
+.Contact-module-scss-module__eVUb_G__contact .Contact-module-scss-module__eVUb_G__successMessage {
+  color: red;
+}
+
 .Contact-module-scss-module__eVUb_G__contact__button {
   text-align: center;
   color: #fff;

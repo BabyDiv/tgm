@@ -467,6 +467,10 @@
   font-size: .85em;
 }
 
+.contact .successMessage {
+  color: red;
+}
+
 .contact__button {
   text-align: center;
   color: #fff;
@@ -2646,6 +2650,10 @@ body {
   color: red;
   margin-top: 8px;
   font-size: .85em;
+}
+
+.Contact-module-scss-module__eVUb_G__contact .Contact-module-scss-module__eVUb_G__successMessage {
+  color: red;
 }
 
 .Contact-module-scss-module__eVUb_G__contact__button {

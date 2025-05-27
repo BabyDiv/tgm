@@ -1,11 +1,7 @@
 {
   "app": {
     "[project]/src/app/contact/page": [],
-    "[project]/src/app/design/page": [],
-    "[project]/src/app/engineering/page": [],
-    "[project]/src/app/management/page": [],
-    "[project]/src/app/page": [],
-    "[project]/src/app/vision/page": []
+    "[project]/src/app/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

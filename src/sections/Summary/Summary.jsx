@@ -9,7 +9,7 @@ export default function Summary() {
   const { t } = useLanguage();
 
   return (
-    <section class={styles.summary}>
+    <section className={styles.summary}>
       <p className={styles.summary__text}
         dangerouslySetInnerHTML={{ __html: t('management summary text') }} 
       />

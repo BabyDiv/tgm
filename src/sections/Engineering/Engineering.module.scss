@@ -29,14 +29,14 @@
 			@include apply-font($font-heading-2-desktop);
       margin: 32px 0;
 		}
+	}
 
-		&-list {
-			padding-left: 0;
-      color: #000000;
+	&__list {
+		padding-left: 0;
+		color: #000000;
 
-			@media(min-width: 768px) {
-				padding-left: 40px;
-			}
+		@media(min-width: 768px) {
+			padding-left: 40px;
 		}
 	}
 
@@ -51,7 +51,7 @@
 
 	&__desc,
 	&__summary,
-	&__tasks-item {
+	&__item {
 		@include apply-font($font-paragraph-2-mobile);
     color: #000000;
 

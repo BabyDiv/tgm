@@ -652,13 +652,13 @@
   }
 }
 
-.engineering__tasks-list {
+.engineering__list {
   color: #000;
   padding-left: 0;
 }
 
 @media (width >= 768px) {
-  .engineering__tasks-list {
+  .engineering__list {
     padding-left: 40px;
   }
 }
@@ -674,7 +674,7 @@
   }
 }
 
-.engineering__desc, .engineering__summary, .engineering__tasks-item {
+.engineering__desc, .engineering__summary, .engineering__item {
   color: #000;
   font-family: Geometria Light;
   font-size: 16px;
@@ -683,7 +683,7 @@
 }
 
 @media (width >= 768px) {
-  .engineering__desc, .engineering__summary, .engineering__tasks-item {
+  .engineering__desc, .engineering__summary, .engineering__item {
     font-family: Geometria Light;
     font-size: 16px;
     font-weight: 400;
@@ -1359,7 +1359,7 @@
   transition: all .3s;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50%;
   transform: translateY(10px);
   box-shadow: 0 4px 12px #0000001a;
 }
@@ -1507,7 +1507,7 @@
     transition: all .3s;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -50%;
     transform: translateY(10px);
     box-shadow: 0 4px 12px #0000001a;
   }

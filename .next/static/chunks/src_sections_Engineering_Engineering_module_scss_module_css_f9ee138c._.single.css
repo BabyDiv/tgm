@@ -47,13 +47,13 @@
   }
 }
 
-.Engineering-module-scss-module__ONBNZq__engineering__tasks-list {
+.Engineering-module-scss-module__ONBNZq__engineering__list {
   color: #000;
   padding-left: 0;
 }
 
 @media (width >= 768px) {
-  .Engineering-module-scss-module__ONBNZq__engineering__tasks-list {
+  .Engineering-module-scss-module__ONBNZq__engineering__list {
     padding-left: 40px;
   }
 }
@@ -69,7 +69,7 @@
   }
 }
 
-.Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__tasks-item {
+.Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__item {
   color: #000;
   font-family: Geometria Light;
   font-size: 16px;
@@ -78,7 +78,7 @@
 }
 
 @media (width >= 768px) {
-  .Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__tasks-item {
+  .Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__item {
     font-family: Geometria Light;
     font-size: 16px;
     font-weight: 400;

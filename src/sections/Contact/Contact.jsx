@@ -65,7 +65,11 @@ export default function Contact() {
         <p className={styles.contact__text}>{t("contact text")}</p>
       </div>
 
-      <form noValidate onSubmit={handleSubmit} className={styles.contact__form}>
+      <form noValidate
+        onSubmit={handleSubmit}
+        action="https://formspree.io/f/mnndkegr"
+        method="POST"
+        className={styles.contact__form}>
         <label>
           <span>{t("contact first name")}</span>
           <input
@@ -121,6 +125,8 @@ export default function Contact() {
             placeholder={t("contact message placeholder")}
           />
         </label>
+
+        <input type="text" name="_gotcha" style={{ display: "none" }} />
 
         <button type="submit" className="contact__button">
           {t("contact button")}

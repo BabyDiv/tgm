@@ -2,8 +2,23 @@ import './globals.css';
 import { LanguageProvider } from '../context/LanguageContext';
 
 export const metadata = {
-  title: 'KVINT',
-  description: 'Описание...',
+  title: 'TGM Export',
+  description: 'Company specializing in providing comprehensive solutions in the selection, configuration, calculation, and support of deals related to the supply of pumping equipment.',
+  keywords: [
+    'промышленные насосы',
+    'насосное оборудование',
+    'инженерные услуги',
+    'подбор оборудования',
+    'насосные системы',
+    'industrial pumps',
+    'pumping equipment',
+    'Kazakhstan exports',
+    'engineering services',
+    'TGM Export',
+    'project support',
+    'equipment supply',
+    'technical consulting',
+  ],
 };
 
 export const viewport = {

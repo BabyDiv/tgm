@@ -385,7 +385,6 @@ function Nav() {
             }, this)
         ]
     }, void 0, true);
-//   <>
 //     <button className={`burger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
 //       <span className="burger__line"></span>
 //       <span className="burger__line"></span>
@@ -693,25 +692,26 @@ function Footer() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Footer$2f$Footer$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footer__text,
                             children: [
-                                "TOO «ЦелинГидромашЭкспорт» ",
+                                t('footer llp'),
+                                " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/sections/Footer/Footer.jsx",
                                     lineNumber: 17,
-                                    columnNumber: 33
+                                    columnNumber: 24
                                 }, this),
-                                "Казахстан, г. Астана, район Сарыарка",
+                                t('footer city'),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/sections/Footer/Footer.jsx",
                                     lineNumber: 18,
-                                    columnNumber: 47
+                                    columnNumber: 29
                                 }, this),
-                                "улица Бейбітшілік, здание 14, офис 1507",
+                                t('footer street office'),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/sections/Footer/Footer.jsx",
                                     lineNumber: 19,
-                                    columnNumber: 45
+                                    columnNumber: 33
                                 }, this),
-                                "почтовый индекс 010000"
+                                t('footer postal code')
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/sections/Footer/Footer.jsx",
@@ -1073,10 +1073,10 @@ __turbopack_context__.v({
   "engineering": "Engineering-module-scss-module__ONBNZq__engineering",
   "engineering__desc": "Engineering-module-scss-module__ONBNZq__engineering__desc",
   "engineering__heading": "Engineering-module-scss-module__ONBNZq__engineering__heading",
+  "engineering__item": "Engineering-module-scss-module__ONBNZq__engineering__item",
+  "engineering__list": "Engineering-module-scss-module__ONBNZq__engineering__list",
   "engineering__summary": "Engineering-module-scss-module__ONBNZq__engineering__summary",
   "engineering__tasks": "Engineering-module-scss-module__ONBNZq__engineering__tasks",
-  "engineering__tasks-item": "Engineering-module-scss-module__ONBNZq__engineering__tasks-item",
-  "engineering__tasks-list": "Engineering-module-scss-module__ONBNZq__engineering__tasks-list",
 });
 }}),
 "[project]/src/sections/Engineering/Engineering.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
@@ -1102,10 +1102,10 @@ function Engineering() {
     _s();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        class: "engineering",
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                class: "engineering__heading",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__heading,
                 children: t("application engineering")
             }, void 0, false, {
                 fileName: "[project]/src/sections/Engineering/Engineering.jsx",
@@ -1113,7 +1113,7 @@ function Engineering() {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                class: "engineering__desc",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__desc,
                 children: t("engineering desc")
             }, void 0, false, {
                 fileName: "[project]/src/sections/Engineering/Engineering.jsx",
@@ -1121,7 +1121,7 @@ function Engineering() {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                class: "engineering__tasks",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__tasks,
                 children: t("engineering tasks")
             }, void 0, false, {
                 fileName: "[project]/src/sections/Engineering/Engineering.jsx",
@@ -1129,10 +1129,10 @@ function Engineering() {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
-                class: "engineering__tasks-list",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__list,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        class: "engineering__tasks-item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__item,
                         dangerouslySetInnerHTML: {
                             __html: `${t('engineering title one')} ${t('engineering text one')}`
                         }
@@ -1142,7 +1142,7 @@ function Engineering() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        class: "engineering__tasks-item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__item,
                         dangerouslySetInnerHTML: {
                             __html: `${t('engineering title two')} ${t('engineering text two')}`
                         }
@@ -1152,7 +1152,7 @@ function Engineering() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        class: "engineering__tasks-item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__item,
                         dangerouslySetInnerHTML: {
                             __html: `${t('engineering title three')} ${t('engineering text three')}`
                         }
@@ -1162,7 +1162,7 @@ function Engineering() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        class: "engineering__tasks-item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__item,
                         dangerouslySetInnerHTML: {
                             __html: `${t('engineering title four')} ${t('engineering text four')}`
                         }
@@ -1172,7 +1172,7 @@ function Engineering() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        class: "engineering__tasks-item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__item,
                         dangerouslySetInnerHTML: {
                             __html: `${t('engineering title five')} ${t('engineering text five')}`
                         }
@@ -1188,7 +1188,7 @@ function Engineering() {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                class: "engineering__summary",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].engineering__summary,
                 children: t("engineering summary")
             }, void 0, false, {
                 fileName: "[project]/src/sections/Engineering/Engineering.jsx",

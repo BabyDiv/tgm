@@ -385,7 +385,6 @@ function Nav() {
             }, this)
         ]
     }, void 0, true);
-//   <>
 //     <button className={`burger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu} aria-label="Toggle menu">
 //       <span className="burger__line"></span>
 //       <span className="burger__line"></span>
@@ -976,10 +975,10 @@ function Expertise() {
     _s();
     const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLanguage"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "expertise",
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "expertise__heading",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__heading,
                 children: t('expertise areas')
             }, void 0, false, {
                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -987,13 +986,13 @@ function Expertise() {
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                className: "expertise__list",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__list,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('pumping equipment selection')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1001,7 +1000,7 @@ function Expertise() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 dangerouslySetInnerHTML: {
                                     __html: t('pumping description')
                                 }
@@ -1017,10 +1016,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('equipment configuration')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1028,7 +1027,7 @@ function Expertise() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 children: t('equipment configuration description')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1042,10 +1041,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('engineering calculations')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1053,7 +1052,7 @@ function Expertise() {
                                 columnNumber: 7
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 children: t('engineering calculations description')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1067,10 +1066,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('technical documentation')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1078,7 +1077,7 @@ function Expertise() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 dangerouslySetInnerHTML: {
                                     __html: t('technical documentation description')
                                 }
@@ -1094,10 +1093,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('deal support')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1105,7 +1104,7 @@ function Expertise() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 dangerouslySetInnerHTML: {
                                     __html: t('deal support description')
                                 }
@@ -1121,10 +1120,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('sic')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1132,7 +1131,7 @@ function Expertise() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 children: t('sic description')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1146,10 +1145,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('technical support')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1157,7 +1156,7 @@ function Expertise() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 dangerouslySetInnerHTML: {
                                     __html: t('technical support description')
                                 }
@@ -1173,10 +1172,10 @@ function Expertise() {
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: "expertise__item",
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__item,
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "expertise__title",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__title,
                                 children: t('training services')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",
@@ -1184,7 +1183,7 @@ function Expertise() {
                                 columnNumber: 9
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "expertise__text",
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Expertise$2f$Expertise$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].expertise__text,
                                 children: t('training services description')
                             }, void 0, false, {
                                 fileName: "[project]/src/sections/Expertise/Expertise.jsx",

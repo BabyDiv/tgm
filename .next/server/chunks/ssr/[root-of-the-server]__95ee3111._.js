@@ -794,376 +794,145 @@ function Footer() {
     }, this);
 }
 }}),
-"[project]/src/sections/Banner/Banner.module.scss.module.css [app-ssr] (css module)": ((__turbopack_context__) => {
+"[project]/src/sections/Contact/Contact.jsx [app-ssr] (ecmascript)": (function(__turbopack_context__) {
 
-var { g: global, __dirname } = __turbopack_context__;
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-__turbopack_context__.v({
-  "active": "Banner-module-scss-module__0-5cwa__active",
-  "arrow-icon": "Banner-module-scss-module__0-5cwa__arrow-icon",
-  "banner": "Banner-module-scss-module__0-5cwa__banner",
-  "banner__arrow": "Banner-module-scss-module__0-5cwa__banner__arrow",
-  "banner__background": "Banner-module-scss-module__0-5cwa__banner__background",
-  "banner__slide": "Banner-module-scss-module__0-5cwa__banner__slide",
-  "left": "Banner-module-scss-module__0-5cwa__left",
-  "right": "Banner-module-scss-module__0-5cwa__right",
-  "slide-1": "Banner-module-scss-module__0-5cwa__slide-1",
-  "slide-2": "Banner-module-scss-module__0-5cwa__slide-2",
-  "slide-3": "Banner-module-scss-module__0-5cwa__slide-3",
-});
+// "use client";
+// import '../../styles/main.scss';
+// import { useLanguage } from '../../context/LanguageContext';
+// import { useEffect, useRef, useState } from 'react';
+// import styles from './Contact.module.scss';
+// import 'intl-tel-input/build/css/intlTelInput.css';
+// export default function Contact() {
+//   const { t } = useLanguage();
+//   const phoneInputRef = useRef(null);
+//   const [errors, setErrors] = useState({});
+//   useEffect(() => {
+//     if (typeof window !== "undefined") {
+//       (async () => {
+//         const intlTelInput = (await import("intl-tel-input")).default;
+//         if (phoneInputRef.current) {
+//           intlTelInput(phoneInputRef.current, {
+//             initialCountry: "auto",
+//             geoIpLookup: callback => {
+//               fetch("https://ipinfo.io/json?token=<your_token>")
+//                 .then(res => res.json())
+//                 .then(data => callback(data.country))
+//                 .catch(() => callback("us"));
+//             },
+//             utilsScript:
+//               "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js",
+//           });
+//         }
+//       })();
+//     }
+//   }, []);
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     const form = e.target;
+//     const newErrors = {};
+//     if (!form.firstName.value.trim()) {
+//       newErrors.firstName = t("contact first name error") || "Enter first name";
+//     }
+//     if (!form.lastName.value.trim()) {
+//       newErrors.lastName = t("contact last name error") || "Enter last name";
+//     }
+//     if (!form.email.value.trim()) {
+//       newErrors.email = t("contact email error") || "Enter email";
+//     } else if (!/\S+@\S+\.\S+/.test(form.email.value)) {
+//       newErrors.email = t("contact email error") || "Email invalid";
+//     }
+//     setErrors(newErrors);
+//     if (Object.keys(newErrors).length === 0) {
+//       form.submit();
+//     }
+//   };
+//   return (
+//     <section className={styles.contact}>
+//       <div className={styles.contact__info}>
+//         <h1 className={styles.contact__title}>{t("contact title")}</h1>
+//         <p className={styles.contact__text}>{t("contact text")}</p>
+//       </div>
+//       <form noValidate
+//         onSubmit={handleSubmit}
+//         action="https://formspree.io/f/mnndkegr"
+//         method="POST"
+//         className={styles.contact__form}>
+//         <label>
+//           <span>{t("contact first name")}</span>
+//           <input
+//             type="text"
+//             name="firstName"
+//             placeholder={t("contact first name placeholder")}
+//           />
+//           {errors.firstName && (
+//             <small className={styles.error}>{errors.firstName}</small>
+//           )}
+//         </label>
+//         <label>
+//           <span>{t("contact last name")}</span>
+//           <input
+//             type="text"
+//             name="lastName"
+//             placeholder={t("contact last name placeholder")}
+//           />
+//           {errors.lastName && (
+//             <small className={styles.error}>{errors.lastName}</small>
+//           )}
+//         </label>
+//         <label>
+//           <span>{t("contact email")}</span>
+//           <input
+//             type="email"
+//             name="email"
+//             placeholder={t("contact email placeholder")}
+//           />
+//           {errors.email && (
+//             <small className={styles.error}>{errors.email}</small>
+//           )}
+//         </label>
+//         <label>
+//           <span>{t("contact phone")}</span>
+//           <input
+//             type="tel"
+//             id="phone"
+//             name="phone"
+//             ref={phoneInputRef}
+//             placeholder={t("contact phone placeholder")}
+//           />
+//         </label>
+//         <label>
+//           <span>{t("contact message")}</span>
+//           <textarea
+//             name="message"
+//             rows="4"
+//             placeholder={t("contact message placeholder")}
+//           />
+//         </label>
+//         <input type="text" name="_gotcha" style={{ display: "none" }} />
+//         <button type="submit" className="contact__button">
+//           {t("contact button")}
+//         </button>
+//       </form>
+//     </section>
+//   );
+// }
 }}),
-"[project]/src/assets/slide-1-desktop.webp (static in ecmascript)": ((__turbopack_context__) => {
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.v("/_next/static/media/slide-1-desktop.cfb28b9e.webp");}}),
-"[project]/src/assets/slide-1-desktop.webp.mjs { IMAGE => \"[project]/src/assets/slide-1-desktop.webp (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
+"[project]/src/app/contact/page.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$1$2d$desktop$2e$webp__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/slide-1-desktop.webp (static in ecmascript)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$1$2d$desktop$2e$webp__$28$static__in__ecmascript$29$__["default"],
-    width: 6000,
-    height: 4000,
-    blurDataURL: "data:image/webp;base64,UklGRtwAAABXRUJQVlA4TNAAAAAvBwABAM1VICICHgiACQMAAIDqEheZIaF7IADiAAgAQAAAAAAAACAAAAAAAABAgAACAAQIHXjIAQAA8EDAbSAAAADOP5d8eQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALotHgjICQAAAMD5338IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACqUm2LzJtSKjW1AkZut69rR5iZPjFfq0es7a5PGQK2P844K/3DZVu28hHiFXOlvwcOApta+k2MwlNHgj/9sNEH",
-    blurWidth: 8,
-    blurHeight: 5
-};
-}}),
-"[project]/src/assets/slide-2-desktop.webp (static in ecmascript)": ((__turbopack_context__) => {
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.v("/_next/static/media/slide-2-desktop.c78cd184.webp");}}),
-"[project]/src/assets/slide-2-desktop.webp.mjs { IMAGE => \"[project]/src/assets/slide-2-desktop.webp (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$2$2d$desktop$2e$webp__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/slide-2-desktop.webp (static in ecmascript)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$2$2d$desktop$2e$webp__$28$static__in__ecmascript$29$__["default"],
-    width: 4086,
-    height: 2587,
-    blurDataURL: "data:image/webp;base64,UklGRtwAAABXRUJQVlA4TNAAAAAvBwABAM1VICICHgiACQMAAAAbBCcGEXCQ4HAAAAAAAAAAAAAAAAAACUAAIAAIAAAFgApAwDcfAAAAHgjYDgIAAMD531u/jRhgCAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxE54EAmwAAAACc/7ZLAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQBicsWmb5/1QSo8jeC+Ec842qRgyyvQupFTwTCQEtuQMPYjBqMGmw5V+/15t0KORIg4TfvenZ9T99sopRz9zgM",
-    blurWidth: 8,
-    blurHeight: 5
-};
-}}),
-"[project]/src/assets/slide-3-desktop.webp (static in ecmascript)": ((__turbopack_context__) => {
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.v("/_next/static/media/slide-3-desktop.197721ad.webp");}}),
-"[project]/src/assets/slide-3-desktop.webp.mjs { IMAGE => \"[project]/src/assets/slide-3-desktop.webp (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$3$2d$desktop$2e$webp__$28$static__in__ecmascript$29$__ = __turbopack_context__.i("[project]/src/assets/slide-3-desktop.webp (static in ecmascript)");
-;
-const __TURBOPACK__default__export__ = {
-    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$3$2d$desktop$2e$webp__$28$static__in__ecmascript$29$__["default"],
-    width: 6000,
-    height: 4000,
-    blurDataURL: "data:image/webp;base64,UklGRuAAAABXRUJQVlA4TNQAAAAvBwABAM1VICICHgiACQMAAAA9fgH8f4AkAABwCMABAAQIAAAAAAAAAAAAAIAA5AAACACF1BiNCAAAgAcCbsQAAABw/knazQMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBbzgMBtmEAAAA4/2zvGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsLVN0kgHrZZhj8QB5ogxwf3dA/9f+PAqf6tVCdfGNnjA3hE2ObGO4BduUU9dT55vy/P6sskg8NyVprgatFKn3pUPAQ==",
-    blurWidth: 8,
-    blurHeight: 5
-};
-}}),
-"[project]/src/sections/Banner/Banner.jsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>Banner)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/LanguageContext.jsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/sections/Banner/Banner.module.scss.module.css [app-ssr] (css module)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$1$2d$desktop$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$slide$2d$1$2d$desktop$2e$webp__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/slide-1-desktop.webp.mjs { IMAGE => "[project]/src/assets/slide-1-desktop.webp (static in ecmascript)" } [app-ssr] (structured image object, ecmascript)');
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$2$2d$desktop$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$slide$2d$2$2d$desktop$2e$webp__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/slide-2-desktop.webp.mjs { IMAGE => "[project]/src/assets/slide-2-desktop.webp (static in ecmascript)" } [app-ssr] (structured image object, ecmascript)');
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$3$2d$desktop$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$slide$2d$3$2d$desktop$2e$webp__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/slide-3-desktop.webp.mjs { IMAGE => "[project]/src/assets/slide-3-desktop.webp (static in ecmascript)" } [app-ssr] (structured image object, ecmascript)');
-"use client";
-;
-;
-;
-;
-;
-;
-;
-;
-function Banner() {
-    const [currentSlide, setCurrentSlide] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
-    const slideInterval = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const slides = [
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$1$2d$desktop$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$slide$2d$1$2d$desktop$2e$webp__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$2$2d$desktop$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$slide$2d$2$2d$desktop$2e$webp__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$slide$2d$3$2d$desktop$2e$webp$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$slide$2d$3$2d$desktop$2e$webp__$28$static__in__ecmascript$2922$__$7d$__$5b$app$2d$ssr$5d$__$28$structured__image__object$2c$__ecmascript$29$__["default"]
-    ];
-    const changeSlide = (index)=>{
-        setCurrentSlide(index);
-    };
-    const nextSlide = ()=>{
-        setCurrentSlide((prev)=>(prev + 1) % slides.length);
-    };
-    const prevSlide = ()=>{
-        setCurrentSlide((prev)=>(prev - 1 + slides.length) % slides.length);
-    };
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        slideInterval.current = setInterval(nextSlide, 5000);
-        return ()=>clearInterval(slideInterval.current);
-    }, []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].banner,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].banner__background,
-                children: slides.map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].banner__slide} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].slide} ${index === currentSlide ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].active : ''}`,
-                        style: {
-                            backgroundImage: `url(${image.src})`
-                        }
-                    }, index, false, {
-                        fileName: "[project]/src/sections/Banner/Banner.jsx",
-                        lineNumber: 40,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Banner/Banner.jsx",
-                lineNumber: 38,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].banner__arrow} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].left}`,
-                onClick: prevSlide,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    viewBox: "0 0 24 24",
-                    className: "arrow-icon",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                        d: "M15 6l-6 6 6 6",
-                        fill: "none",
-                        stroke: "white",
-                        strokeWidth: "2",
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round"
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Banner/Banner.jsx",
-                        lineNumber: 50,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/sections/Banner/Banner.jsx",
-                    lineNumber: 49,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Banner/Banner.jsx",
-                lineNumber: 48,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                className: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].banner__arrow} ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].right}`,
-                onClick: nextSlide,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                    viewBox: "0 0 24 24",
-                    className: "arrow-icon",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                        d: "M9 6l6 6-6 6",
-                        fill: "none",
-                        stroke: "white",
-                        strokeWidth: "2",
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round"
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Banner/Banner.jsx",
-                        lineNumber: 55,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/sections/Banner/Banner.jsx",
-                    lineNumber: 54,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Banner/Banner.jsx",
-                lineNumber: 53,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/sections/Banner/Banner.jsx",
-        lineNumber: 37,
-        columnNumber: 5
-    }, this);
-}
-}}),
-"[project]/src/sections/Engineering/Engineering.module.scss.module.css [app-ssr] (css module)": ((__turbopack_context__) => {
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.v({
-  "engineering": "Engineering-module-scss-module__ONBNZq__engineering",
-  "engineering__desc": "Engineering-module-scss-module__ONBNZq__engineering__desc",
-  "engineering__heading": "Engineering-module-scss-module__ONBNZq__engineering__heading",
-  "engineering__item": "Engineering-module-scss-module__ONBNZq__engineering__item",
-  "engineering__list": "Engineering-module-scss-module__ONBNZq__engineering__list",
-  "engineering__summary": "Engineering-module-scss-module__ONBNZq__engineering__summary",
-  "engineering__tasks": "Engineering-module-scss-module__ONBNZq__engineering__tasks",
-});
-}}),
-"[project]/src/sections/Engineering/Engineering.jsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>Engineering)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/context/LanguageContext.jsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/sections/Engineering/Engineering.module.scss.module.css [app-ssr] (css module)");
-"use client";
-;
-;
-;
-;
-;
-function Engineering() {
-    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$LanguageContext$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLanguage"])();
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__heading,
-                children: t("application engineering")
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                lineNumber: 14,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__desc,
-                children: t("engineering desc")
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                lineNumber: 17,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__tasks,
-                children: t("engineering tasks")
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                lineNumber: 20,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__list,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__item,
-                        dangerouslySetInnerHTML: {
-                            __html: `${t('engineering title one')} ${t('engineering text one')}`
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                        lineNumber: 24,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__item,
-                        dangerouslySetInnerHTML: {
-                            __html: `${t('engineering title two')} ${t('engineering text two')}`
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                        lineNumber: 30,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__item,
-                        dangerouslySetInnerHTML: {
-                            __html: `${t('engineering title three')} ${t('engineering text three')}`
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                        lineNumber: 36,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__item,
-                        dangerouslySetInnerHTML: {
-                            __html: `${t('engineering title four')} ${t('engineering text four')}`
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                        lineNumber: 42,
-                        columnNumber: 7
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__item,
-                        dangerouslySetInnerHTML: {
-                            __html: `${t('engineering title five')} ${t('engineering text five')}`
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                        lineNumber: 48,
-                        columnNumber: 7
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                lineNumber: 23,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$module$2e$scss$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].engineering__summary,
-                children: t("engineering summary")
-            }, void 0, false, {
-                fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-                lineNumber: 55,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/sections/Engineering/Engineering.jsx",
-        lineNumber: 13,
-        columnNumber: 5
-    }, this);
-}
-}}),
-"[project]/src/app/engineering/page.js [app-ssr] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>EngineeringPage)
+    "default": (()=>DesignPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Header$2f$Header$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/sections/Header/Header.jsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Footer$2f$Footer$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/sections/Footer/Footer.jsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/sections/Banner/Banner.jsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/sections/Engineering/Engineering.jsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Contact$2f$Contact$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/sections/Contact/Contact.jsx [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
@@ -1172,36 +941,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineeri
 ;
 ;
 ;
-;
-function EngineeringPage() {
+function DesignPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Header$2f$Header$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "[project]/src/app/engineering/page.js",
-                lineNumber: 14,
+                fileName: "[project]/src/app/contact/page.js",
+                lineNumber: 13,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Banner$2f$Banner$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                        fileName: "[project]/src/app/engineering/page.js",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Engineering$2f$Engineering$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                        fileName: "[project]/src/app/engineering/page.js",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/engineering/page.js",
-                lineNumber: 15,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Contact$2f$Contact$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/src/app/contact/page.js",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/contact/page.js",
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$sections$2f$Footer$2f$Footer$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "[project]/src/app/engineering/page.js",
-                lineNumber: 19,
+                fileName: "[project]/src/app/contact/page.js",
+                lineNumber: 17,
                 columnNumber: 7
             }, this)
         ]
@@ -1211,4 +972,4 @@ function EngineeringPage() {
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__7383aff7._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__95ee3111._.js.map

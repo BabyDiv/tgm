@@ -652,13 +652,13 @@
   }
 }
 
-.engineering__tasks-list {
+.engineering__list {
   color: #000;
   padding-left: 0;
 }
 
 @media (width >= 768px) {
-  .engineering__tasks-list {
+  .engineering__list {
     padding-left: 40px;
   }
 }
@@ -674,7 +674,7 @@
   }
 }
 
-.engineering__desc, .engineering__summary, .engineering__tasks-item {
+.engineering__desc, .engineering__summary, .engineering__item {
   color: #000;
   font-family: Geometria Light;
   font-size: 16px;
@@ -683,7 +683,7 @@
 }
 
 @media (width >= 768px) {
-  .engineering__desc, .engineering__summary, .engineering__tasks-item {
+  .engineering__desc, .engineering__summary, .engineering__item {
     font-family: Geometria Light;
     font-size: 16px;
     font-weight: 400;
@@ -973,7 +973,7 @@
 
 .hero__background {
   filter: brightness(.4);
-  background: url("../media/bg-mobile.41fe91ed.webp") center / cover no-repeat fixed;
+  background: url("../media/bg-mobile.41fe91ed.webp") center / cover no-repeat;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -983,7 +983,7 @@
 
 @media (width >= 768px) {
   .hero__background {
-    background: url("../media/bg-desktop.6268addc.webp") center / cover no-repeat;
+    background: url("../media/bg-desktop.6268addc.webp") center / cover no-repeat fixed;
   }
 }
 
@@ -1359,7 +1359,7 @@
   transition: all .3s;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50%;
   transform: translateY(10px);
   box-shadow: 0 4px 12px #0000001a;
 }
@@ -1507,7 +1507,7 @@
     transition: all .3s;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -50%;
     transform: translateY(10px);
     box-shadow: 0 4px 12px #0000001a;
   }
@@ -2144,7 +2144,7 @@ body {
   transition: all .3s;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50%;
   transform: translateY(10px);
   box-shadow: 0 4px 12px #0000001a;
 }
@@ -2292,7 +2292,7 @@ body {
     transition: all .3s;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -50%;
     transform: translateY(10px);
     box-shadow: 0 4px 12px #0000001a;
   }
@@ -2680,13 +2680,13 @@ body {
   }
 }
 
-.Engineering-module-scss-module__ONBNZq__engineering__tasks-list {
+.Engineering-module-scss-module__ONBNZq__engineering__list {
   color: #000;
   padding-left: 0;
 }
 
 @media (width >= 768px) {
-  .Engineering-module-scss-module__ONBNZq__engineering__tasks-list {
+  .Engineering-module-scss-module__ONBNZq__engineering__list {
     padding-left: 40px;
   }
 }
@@ -2702,7 +2702,7 @@ body {
   }
 }
 
-.Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__tasks-item {
+.Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__item {
   color: #000;
   font-family: Geometria Light;
   font-size: 16px;
@@ -2711,7 +2711,7 @@ body {
 }
 
 @media (width >= 768px) {
-  .Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__tasks-item {
+  .Engineering-module-scss-module__ONBNZq__engineering__desc, .Engineering-module-scss-module__ONBNZq__engineering__summary, .Engineering-module-scss-module__ONBNZq__engineering__item {
     font-family: Geometria Light;
     font-size: 16px;
     font-weight: 400;

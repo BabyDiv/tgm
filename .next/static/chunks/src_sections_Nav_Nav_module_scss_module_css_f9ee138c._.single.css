@@ -70,7 +70,7 @@
   transition: all .3s;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -50%;
   transform: translateY(10px);
   box-shadow: 0 4px 12px #0000001a;
 }
@@ -218,7 +218,7 @@
     transition: all .3s;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: -50%;
     transform: translateY(10px);
     box-shadow: 0 4px 12px #0000001a;
   }

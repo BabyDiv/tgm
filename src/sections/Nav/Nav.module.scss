@@ -60,7 +60,8 @@
 	&__dropdown {
 		position: absolute;
 		top: 100%;
-		left: 0;
+		left: -50%;
+		// transform: translate(-50%, 10px);
 		background: white;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 		border-radius: 8px;
@@ -202,7 +203,7 @@
 		&__dropdown {
 			position: absolute;
 			top: 100%;
-			left: 0;
+			left: -50%;
 			background: white;
 			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 			padding: 10px 0;

@@ -10,49 +10,49 @@ export default function Engineering() {
   const { t } = useLanguage();
 
   return (
-    <section class="engineering">
-    <h1 class="engineering__heading">
+    <section className={styles.engineering}>
+    <h1 className={styles.engineering__heading}>
     {t("application engineering")}
     </h1>
-    <p class="engineering__desc">
+    <p className={styles.engineering__desc}>
       {t("engineering desc")}
     </p>
-    <h2 class="engineering__tasks">
+    <h2 className={styles.engineering__tasks}>
       {t("engineering tasks")}
     </h2>
-    <ol class="engineering__tasks-list">
-      <li class="engineering__tasks-item"
+    <ol className={styles.engineering__list}>
+      <li className={styles.engineering__item}
         dangerouslySetInnerHTML={{
           __html: `${t('engineering title one')} ${t('engineering text one')}`,
         }}
       >
       </li>
-      <li class="engineering__tasks-item"
+      <li className={styles.engineering__item}
         dangerouslySetInnerHTML={{
           __html: `${t('engineering title two')} ${t('engineering text two')}`,
         }}
       >
       </li>
-      <li class="engineering__tasks-item"
+      <li className={styles.engineering__item}
         dangerouslySetInnerHTML={{
           __html: `${t('engineering title three')} ${t('engineering text three')}`,
         }}
       >
       </li>
-      <li class="engineering__tasks-item"
+      <li className={styles.engineering__item}
         dangerouslySetInnerHTML={{
           __html: `${t('engineering title four')} ${t('engineering text four')}`,
         }}
       >
       </li>
-      <li class="engineering__tasks-item"
+      <li className={styles.engineering__item}
         dangerouslySetInnerHTML={{
           __html: `${t('engineering title five')} ${t('engineering text five')}`,
         }}
       >
       </li>
     </ol>
-    <p class="engineering__summary">
+    <p className={styles.engineering__summary}>
       {t("engineering summary")}
     </p>
     </section>

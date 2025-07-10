@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/contact/route": "/api/contact",
+  "/about/page": "/about",
+  "/contact/page": "/contact",
+  "/design/page": "/design",
+  "/management/page": "/management",
+  "/page": "/",
+  "/engineering/page": "/engineering",
+  "/vision/page": "/vision",
+  "/services/page": "/services"
+}

@@ -1,4 +1,4 @@
-// File: /Users/innastacenko/Desktop/new/Kvint-react/src/app/services/page.js
+// File: /Users/innastacenko/Desktop/TGM-new/src/app/services/page.js
 import * as entry from '../../../../src/app/services/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

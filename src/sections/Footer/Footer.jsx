@@ -22,7 +22,7 @@ export default function Footer() {
 				</div>
 
 				<div className={`${styles.footer__block} ${styles['footer__block--company']}`}>
-					<h3 className={styles.footer__title}><strong>TGM Export</strong></h3>
+					<h3 className={styles.footer__title}><strong>CelinGidroMashExport</strong></h3>
 					<p className={styles.footer__text}>
 						E-mail:
 						<a href="mailto:info@cgmexport.kz" className={styles.footer__link}>
@@ -35,10 +35,6 @@ export default function Footer() {
 						  +7 778 555 23 87
 						</a>
 					</p>
-				</div>
-
-				<div className={`${styles.footer__block} ${styles['footer__block--copyright']}`}>
-					<p className={styles.footer__text}>© 2025 by KVINT</p>
 				</div>
 
 			</div>		

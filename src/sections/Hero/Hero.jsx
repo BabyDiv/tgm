@@ -29,7 +29,7 @@ export default function Hero() {
           {t('hero')}
         </p>
         <div className={styles.hero__wrapper}>
-          <a href="/contact" className={`${styles.button} ${styles.hero__button}`}>
+          <a href="/contact.html" className={`${styles.button} ${styles.hero__button}`}>
             {t('contact us')}
           </a>
         </div>

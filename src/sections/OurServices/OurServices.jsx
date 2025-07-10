@@ -27,7 +27,7 @@ export default function OurServices() {
             <p className={styles.card__text} dangerouslySetInnerHTML={{ __html: t('card one text') }}>
             </p>
             <div className={styles.card__footer}>
-              <a href="/engineering" className={`${styles.card__button} ${styles.button}`}>{t('info button')}</a>
+              <a href="/engineering.html" className={`${styles.card__button} ${styles.button}`}>{t('info button')}</a>
             </div>
           </article>
 
@@ -39,7 +39,7 @@ export default function OurServices() {
             <p className={styles.card__text} dangerouslySetInnerHTML={{ __html: t('card two text') }}>
             </p>
             <div className={styles.card__footer}>
-              <a href="/design" className={`${styles.card__button} ${styles.button}`}>{t('info button')}</a>
+              <a href="/design.html" className={`${styles.card__button} ${styles.button}`}>{t('info button')}</a>
             </div>
           </article>
 
@@ -51,7 +51,7 @@ export default function OurServices() {
             <p className={styles.card__text} dangerouslySetInnerHTML={{ __html: t('card three text') }}>
             </p>
             <div className={styles.card__footer}>
-              <a href="/management" className={`${styles.card__button} ${styles.button}`}>{t('info button')}</a>
+              <a href="/management.html" className={`${styles.card__button} ${styles.button}`}>{t('info button')}</a>
             </div>
           </article>
         </div>

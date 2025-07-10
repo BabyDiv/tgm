@@ -19,8 +19,8 @@ export default function Header() {
             </g>
           </svg>
           <span className={styles.contacts__text}>
-            <a href="tel:+77785552387">
-              +7 (778) 555 23 87
+            <a href="tel:+77082418296">
+              +7 (708) 241 82 96
             </a>
           </span>
         </div>

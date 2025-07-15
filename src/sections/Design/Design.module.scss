@@ -13,6 +13,7 @@
 		color: $color-brand;
 		margin-top: 0;
 		margin-bottom: 30px;
+		overflow-wrap: break-word;
 
 		@media(min-width: 768px) {
 			@include apply-font($font-heading-1-desktop);
